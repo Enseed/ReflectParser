@@ -1,6 +1,0 @@
-[submodule "External/Enseed/Generic/Strings"]
-	path = External/Enseed/Generic/Strings
-	url = https://github.com/Enseed/Strings.git
-[submodule "External/Enseed/Generic/Base"]
-	path = External/Enseed/Generic/Base
-	url = https://github.com/Enseed/GenericBase.git
