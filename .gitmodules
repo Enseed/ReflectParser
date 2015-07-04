@@ -13,8 +13,8 @@
 [submodule "External/Enseed/Generic/CountPtr"]
 	path = External/Enseed/Generic/CountPtr
 	url = https://github.com/gaspardpetit/GenericCountPtr.git
-[submodule "External/clang"]
-	path = External/clang
+[submodule "External/llvm/tools/clang"]
+	path = External/llvm/tools/clang
 	url = https://github.com/llvm-mirror/clang.git
 [submodule "External/llvm"]
 	path = External/llvm
