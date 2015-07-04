@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\Mips16FrameLowering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\Mips16HardFloat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\Mips16HardFloatInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\Mips16InstrInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\Mips16ISelDAGToDAG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\Mips16ISelLowering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\Mips16RegisterInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsAnalyzeImmediate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsAsmPrinter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsCCState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsConstantIslandPass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsDelaySlotFiller.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsFastISel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsInstrInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsISelDAGToDAG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsISelLowering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsFrameLowering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsLongBranch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsMCInstLower.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsMachineFunction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsModuleISelDAGToDAG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsOptimizePICCall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsOs16.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsRegisterInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsSEFrameLowering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsSEInstrInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsSEISelDAGToDAG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsSEISelLowering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsSERegisterInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsSubtarget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsTargetMachine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsTargetObjectFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsSelectionDAGInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MicroMips32r6InstrFormats.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MicroMips32r6InstrInfo.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MicroMipsInstrFormats.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MicroMipsInstrFPU.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MicroMipsInstrInfo.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\Mips.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\Mips16InstrFormats.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\Mips16InstrInfo.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\Mips32r6InstrFormats.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\Mips32r6InstrInfo.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\Mips64InstrInfo.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\Mips64r6InstrInfo.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsCallingConv.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsCondMov.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsDSPInstrFormats.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsDSPInstrInfo.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsInstrFormats.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsInstrFPU.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsInstrInfo.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsMSAInstrFormats.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsMSAInstrInfo.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsRegisterInfo.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsSchedule.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\Mips.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\Mips16FrameLowering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\Mips16HardFloatInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\Mips16InstrInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\Mips16ISelDAGToDAG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\Mips16ISelLowering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\Mips16RegisterInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsAnalyzeImmediate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsAsmPrinter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsCCState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsFrameLowering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsInstrInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsISelDAGToDAG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsISelLowering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsMachineFunction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsMCInstLower.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsOptionRecord.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsRegisterInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsSEFrameLowering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsSEInstrInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsSEISelDAGToDAG.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsSEISelLowering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsSelectionDAGInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsSERegisterInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsSubtarget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsTargetMachine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsTargetObjectFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\MipsTargetStreamer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Mips\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8ABFDC16-7047-4232-9721-4FA6EEF9890C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8B05A30B-80BD-4D4B-B886-6BBE802A2362}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TableGen descriptions">
+      <UniqueIdentifier>{734EAC7A-53DB-46BE-87CF-615153E949A5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

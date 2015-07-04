@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\APSIntType.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\AnalysisManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\AnalyzerOptions.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\BasicValueFactory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\BlockCounter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\BugReporter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\BugReporterVisitors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\CallEvent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\Checker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\CheckerContext.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\CheckerHelpers.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\CheckerManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\CheckerRegistry.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\CommonBugCategories.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\ConstraintManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\CoreEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\Environment.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\ExplodedGraph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\ExprEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\ExprEngineC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\ExprEngineCXX.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\ExprEngineCallAndReturn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\ExprEngineObjC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\FunctionSummary.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\HTMLDiagnostics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\MemRegion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\PathDiagnostic.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\PlistDiagnostics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\ProgramState.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\RangeConstraintManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\RegionStore.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\SValBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\SVals.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\SimpleConstraintManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\SimpleSValBuilder.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\Store.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\SubEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\SymbolManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\AnalyzerOptions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\BugReporter\BugReporter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\BugReporter\BugReporterVisitor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\BugReporter\BugType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\BugReporter\CommonBugCategories.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\BugReporter\PathDiagnostic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\Checker.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\CheckerManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\CheckerOptInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\CheckerRegistry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathDiagnosticConsumers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\AnalysisManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\APSIntType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\BasicValueFactory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\BlockCounter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\CallEvent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\CheckerContext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\CheckerHelpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\ConstraintManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\CoreEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\DynamicTypeInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\Environment.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\ExplodedGraph.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\ExprEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\FunctionSummary.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\MemRegion.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\ProgramState.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\ProgramStateTrait.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\ProgramState_Fwd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\Store.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\StoreRef.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\SubEngine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\SummaryManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\SValBuilder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\SVals.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\SymbolManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\TaintManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\TaintTag.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\PathSensitive\WorkList.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\StaticAnalyzer\Core\Analyses.def">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\PrettyStackTraceLocationContext.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\SimpleConstraintManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Core\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8ABFDC16-7047-4232-9721-4FA6EEF9890C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8B05A30B-80BD-4D4B-B886-6BBE802A2362}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

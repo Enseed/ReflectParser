@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Format\BreakableToken.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Format\ContinuationIndenter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Format\Format.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Format\FormatToken.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Format\TokenAnnotator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Format\UnwrappedLineFormatter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Format\UnwrappedLineParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Format\WhitespaceManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Format\Format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Format\BreakableToken.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Format\ContinuationIndenter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Format\Encoding.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Format\FormatToken.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Format\TokenAnnotator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Format\UnwrappedLineFormatter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Format\UnwrappedLineParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Format\WhitespaceManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Format\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8ABFDC16-7047-4232-9721-4FA6EEF9890C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8B05A30B-80BD-4D4B-B886-6BBE802A2362}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

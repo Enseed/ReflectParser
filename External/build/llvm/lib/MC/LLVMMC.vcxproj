@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{FB74706C-E63B-4A4A-B915-B8E6C1ACEAF8}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>LLVMMC</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Work\Public\Reflect\External\build\llvm\Debug\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LLVMMC.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LLVMMC</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Work\Public\Reflect\External\build\llvm\Release\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LLVMMC.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LLVMMC</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Work\Public\Reflect\External\build\llvm\MinSizeRel\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">LLVMMC.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">LLVMMC</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Work\Public\Reflect\External\build\llvm\RelWithDebInfo\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">LLVMMC.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">LLVMMC</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -w14062 /EHs-c- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\MC;C:\Work\Public\Reflect\External\llvm\lib\MC;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\MC;C:\Work\Public\Reflect\External\llvm\lib\MC;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\MC;C:\Work\Public\Reflect\External\llvm\lib\MC;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -w14062 /EHs-c- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\MC;C:\Work\Public\Reflect\External\llvm\lib\MC;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\MC;C:\Work\Public\Reflect\External\llvm\lib\MC;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\MC;C:\Work\Public\Reflect\External\llvm\lib\MC;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -w14062 /EHs-c- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\MC;C:\Work\Public\Reflect\External\llvm\lib\MC;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\MC;C:\Work\Public\Reflect\External\llvm\lib\MC;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\MC;C:\Work\Public\Reflect\External\llvm\lib\MC;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -w14062 /EHs-c- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\MC;C:\Work\Public\Reflect\External\llvm\lib\MC;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\MC;C:\Work\Public\Reflect\External\llvm\lib\MC;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\MC;C:\Work\Public\Reflect\External\llvm\lib\MC;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\llvm\lib\MC\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Work/Public/Reflect/External/llvm/lib/MC/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Work/Public/Reflect/External/llvm -BC:/Work/Public/Reflect/External/build/llvm --check-stamp-file C:\Work\Public\Reflect\External\build\llvm\lib\MC\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Work/Public/Reflect/External/llvm/lib/MC/CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\lib\MC\CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\lib\MC\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Work\Public\Reflect\External\build\llvm\lib\MC\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Work/Public/Reflect/External/llvm/lib/MC/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Work/Public/Reflect/External/llvm -BC:/Work/Public/Reflect/External/build/llvm --check-stamp-file C:\Work\Public\Reflect\External\build\llvm\lib\MC\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Work/Public/Reflect/External/llvm/lib/MC/CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\lib\MC\CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\lib\MC\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Work\Public\Reflect\External\build\llvm\lib\MC\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Work/Public/Reflect/External/llvm/lib/MC/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Work/Public/Reflect/External/llvm -BC:/Work/Public/Reflect/External/build/llvm --check-stamp-file C:\Work\Public\Reflect\External\build\llvm\lib\MC\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Work/Public/Reflect/External/llvm/lib/MC/CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\lib\MC\CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\lib\MC\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Work\Public\Reflect\External\build\llvm\lib\MC\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Work/Public/Reflect/External/llvm/lib/MC/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Work/Public/Reflect/External/llvm -BC:/Work/Public/Reflect/External/build/llvm --check-stamp-file C:\Work\Public\Reflect\External\build\llvm\lib\MC\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Work/Public/Reflect/External/llvm/lib/MC/CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\lib\MC\CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\lib\MC\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Work\Public\Reflect\External\build\llvm\lib\MC\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\ConstantPools.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MachineLocation.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCAsmBackend.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCAsmInfo.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCAsmInfoCOFF.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCAsmInfoDarwin.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCAsmInfoELF.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCAsmLayout.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCAssembler.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCCodeEmitter.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCCodeGenInfo.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCContext.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCDirectives.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCDisassembler.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCDwarf.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCELFObjectWriter.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCELFStreamer.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCExpr.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCExternalSymbolizer.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCFixedLenDisassembler.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCFixup.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCFixupKindInfo.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCInst.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCInstBuilder.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCInstPrinter.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCInstrAnalysis.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCInstrDesc.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCInstrInfo.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCInstrItineraries.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCLabel.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCLinkerOptimizationHint.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCMachObjectWriter.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCObjectFileInfo.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCObjectStreamer.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCObjectWriter.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCRegisterInfo.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCRelocationInfo.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCSchedule.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCSection.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCSectionCOFF.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCSectionELF.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCSectionMachO.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCStreamer.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCSubtargetInfo.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCSymbol.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCSymbolCOFF.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCSymbolELF.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCSymbolizer.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCSymbolMachO.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCTargetAsmParser.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCTargetOptions.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCTargetOptionsCommandFlags.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCValue.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCWin64EH.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCWinCOFFObjectWriter.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCWinCOFFStreamer.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\MCWinEH.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\SectionKind.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\StringTableBuilder.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\SubtargetFeature.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\MC\YAML.h" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\ConstantPools.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\ELFObjectWriter.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCAsmBackend.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCAsmInfo.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCAsmInfoCOFF.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCAsmInfoDarwin.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCAsmInfoELF.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCAsmStreamer.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCAssembler.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCCodeEmitter.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCCodeGenInfo.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCContext.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCDwarf.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCELFObjectTargetWriter.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCELFStreamer.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCExpr.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCInst.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCInstPrinter.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCInstrAnalysis.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCInstrDesc.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCLabel.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCLinkerOptimizationHint.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCMachOStreamer.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCMachObjectTargetWriter.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCNullStreamer.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCObjectFileInfo.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCObjectStreamer.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCObjectWriter.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCRegisterInfo.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCSection.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCSectionCOFF.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCSectionELF.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCSectionMachO.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCStreamer.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCSubtargetInfo.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCSymbol.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCSymbolELF.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCSymbolizer.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCTargetOptions.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCValue.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCWin64EH.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MCWinEH.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\MachObjectWriter.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\StringTableBuilder.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\SubtargetFeature.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\WinCOFFObjectWriter.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\WinCOFFStreamer.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\MC\YAML.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/ZERO_CHECK.vcxproj">
+      <Project>6F14D479-D3E4-43D2-BD8C-39FC1FC313EA</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\llvm\lib\Target\NVPTX\CMakeLists.txt" />
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\1c0ee94bfb17473106c72cd80401139d\NVPTXGenRegisterInfo.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\1c0ee94bfb17473106c72cd80401139d\NVPTXGenRegisterInfo.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\1c0ee94bfb17473106c72cd80401139d\NVPTXGenInstrInfo.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\1c0ee94bfb17473106c72cd80401139d\NVPTXGenInstrInfo.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\1c0ee94bfb17473106c72cd80401139d\NVPTXGenAsmWriter.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\1c0ee94bfb17473106c72cd80401139d\NVPTXGenAsmWriter.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\1c0ee94bfb17473106c72cd80401139d\NVPTXGenDAGISel.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\1c0ee94bfb17473106c72cd80401139d\NVPTXGenDAGISel.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\1c0ee94bfb17473106c72cd80401139d\NVPTXGenSubtargetInfo.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\1c0ee94bfb17473106c72cd80401139d\NVPTXGenSubtargetInfo.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\d4617c34da382ed38b51d26e7f767e8a\NVPTXCommonTableGen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Work\Public\Reflect\External\build\llvm\lib\Target\NVPTX\CMakeFiles\NVPTXCommonTableGen" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{BB23C24B-ABE3-4278-ABE5-C10B4C9A5EFB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

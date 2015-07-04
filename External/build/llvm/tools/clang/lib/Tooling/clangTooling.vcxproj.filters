@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Tooling\ArgumentsAdjusters.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Tooling\CommonOptionsParser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Tooling\CompilationDatabase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Tooling\FileMatchTrie.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Tooling\JSONCompilationDatabase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Tooling\Refactoring.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Tooling\RefactoringCallbacks.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Tooling\Tooling.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Tooling\ArgumentsAdjusters.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Tooling\CommonOptionsParser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Tooling\CompilationDatabase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Tooling\CompilationDatabasePluginRegistry.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Tooling\Core\Replacement.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Tooling\FileMatchTrie.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Tooling\JSONCompilationDatabase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Tooling\Refactoring.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Tooling\RefactoringCallbacks.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Tooling\ReplacementsYaml.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Tooling\Tooling.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Tooling\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8ABFDC16-7047-4232-9721-4FA6EEF9890C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8B05A30B-80BD-4D4B-B886-6BBE802A2362}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

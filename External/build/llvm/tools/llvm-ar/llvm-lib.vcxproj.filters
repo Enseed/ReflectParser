@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\llvm\tools\llvm-ar\CMakeLists.txt" />
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\c5d2c965d84c9f99e91e34fc6c213617\llvm-lib.exe.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\7085ddfd5fcc4aa1c32eab8bd0011362\llvm-lib.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Work\Public\Reflect\External\build\llvm\tools\llvm-ar\CMakeFiles\llvm-lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{BB23C24B-ABE3-4278-ABE5-C10B4C9A5EFB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

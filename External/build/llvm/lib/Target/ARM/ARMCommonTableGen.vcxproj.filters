@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\llvm\lib\Target\ARM\CMakeLists.txt" />
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\0759de5024d850963881ba98f25c8090\ARMGenRegisterInfo.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\0759de5024d850963881ba98f25c8090\ARMGenRegisterInfo.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\0759de5024d850963881ba98f25c8090\ARMGenInstrInfo.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\0759de5024d850963881ba98f25c8090\ARMGenInstrInfo.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\0759de5024d850963881ba98f25c8090\ARMGenMCCodeEmitter.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\0759de5024d850963881ba98f25c8090\ARMGenMCCodeEmitter.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\0759de5024d850963881ba98f25c8090\ARMGenMCPseudoLowering.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\0759de5024d850963881ba98f25c8090\ARMGenMCPseudoLowering.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\0759de5024d850963881ba98f25c8090\ARMGenAsmWriter.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\0759de5024d850963881ba98f25c8090\ARMGenAsmWriter.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\0759de5024d850963881ba98f25c8090\ARMGenAsmMatcher.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\0759de5024d850963881ba98f25c8090\ARMGenAsmMatcher.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\0759de5024d850963881ba98f25c8090\ARMGenDAGISel.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\0759de5024d850963881ba98f25c8090\ARMGenDAGISel.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\0759de5024d850963881ba98f25c8090\ARMGenFastISel.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\0759de5024d850963881ba98f25c8090\ARMGenFastISel.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\0759de5024d850963881ba98f25c8090\ARMGenCallingConv.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\0759de5024d850963881ba98f25c8090\ARMGenCallingConv.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\0759de5024d850963881ba98f25c8090\ARMGenSubtargetInfo.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\0759de5024d850963881ba98f25c8090\ARMGenSubtargetInfo.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\0759de5024d850963881ba98f25c8090\ARMGenDisassemblerTables.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\0759de5024d850963881ba98f25c8090\ARMGenDisassemblerTables.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\261e76692cb44070c88cc12c821ec436\ARMCommonTableGen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Work\Public\Reflect\External\build\llvm\lib\Target\ARM\CMakeFiles\ARMCommonTableGen" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{BB23C24B-ABE3-4278-ABE5-C10B4C9A5EFB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

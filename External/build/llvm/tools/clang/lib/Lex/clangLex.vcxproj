@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{AE08D93F-05CF-48A0-98D9-28F08941BD03}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>clangLex</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Work\Public\Reflect\External\build\llvm\Debug\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">clangLex.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">clangLex</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Work\Public\Reflect\External\build\llvm\Release\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">clangLex.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">clangLex</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Work\Public\Reflect\External\build\llvm\MinSizeRel\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">clangLex.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">clangLex</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Work\Public\Reflect\External\build\llvm\RelWithDebInfo\lib\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">clangLex.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">clangLex</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -w14062 /EHs-c- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\Lex;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex;C:\Work\Public\Reflect\External\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLANG_ENABLE_ARCMT;CLANG_ENABLE_OBJC_REWRITER;CLANG_ENABLE_STATIC_ANALYZER;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLANG_ENABLE_ARCMT;CLANG_ENABLE_OBJC_REWRITER;CLANG_ENABLE_STATIC_ANALYZER;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\Lex;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex;C:\Work\Public\Reflect\External\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\Lex;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex;C:\Work\Public\Reflect\External\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -w14062 /EHs-c- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\Lex;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex;C:\Work\Public\Reflect\External\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLANG_ENABLE_ARCMT;CLANG_ENABLE_OBJC_REWRITER;CLANG_ENABLE_STATIC_ANALYZER;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLANG_ENABLE_ARCMT;CLANG_ENABLE_OBJC_REWRITER;CLANG_ENABLE_STATIC_ANALYZER;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\Lex;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex;C:\Work\Public\Reflect\External\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\Lex;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex;C:\Work\Public\Reflect\External\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -w14062 /EHs-c- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\Lex;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex;C:\Work\Public\Reflect\External\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLANG_ENABLE_ARCMT;CLANG_ENABLE_OBJC_REWRITER;CLANG_ENABLE_STATIC_ANALYZER;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLANG_ENABLE_ARCMT;CLANG_ENABLE_OBJC_REWRITER;CLANG_ENABLE_STATIC_ANALYZER;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\Lex;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex;C:\Work\Public\Reflect\External\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\Lex;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex;C:\Work\Public\Reflect\External\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -w14062 /EHs-c- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\Lex;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex;C:\Work\Public\Reflect\External\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLANG_ENABLE_ARCMT;CLANG_ENABLE_OBJC_REWRITER;CLANG_ENABLE_STATIC_ANALYZER;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;_GNU_SOURCE;CLANG_ENABLE_ARCMT;CLANG_ENABLE_OBJC_REWRITER;CLANG_ENABLE_STATIC_ANALYZER;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\Lex;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex;C:\Work\Public\Reflect\External\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\Lex;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex;C:\Work\Public\Reflect\External\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Work/Public/Reflect/External/llvm/tools/clang/lib/Lex/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Work/Public/Reflect/External/llvm -BC:/Work/Public/Reflect/External/build/llvm --check-stamp-file C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\Lex\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Work/Public/Reflect/External/llvm/tools/clang/lib/Lex/CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\Lex\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Work/Public/Reflect/External/llvm/tools/clang/lib/Lex/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Work/Public/Reflect/External/llvm -BC:/Work/Public/Reflect/External/build/llvm --check-stamp-file C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\Lex\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Work/Public/Reflect/External/llvm/tools/clang/lib/Lex/CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\Lex\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Work/Public/Reflect/External/llvm/tools/clang/lib/Lex/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Work/Public/Reflect/External/llvm -BC:/Work/Public/Reflect/External/build/llvm --check-stamp-file C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\Lex\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Work/Public/Reflect/External/llvm/tools/clang/lib/Lex/CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\Lex\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Work/Public/Reflect/External/llvm/tools/clang/lib/Lex/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Work/Public/Reflect/External/llvm -BC:/Work/Public/Reflect/External/build/llvm --check-stamp-file C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\Lex\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Work/Public/Reflect/External/llvm/tools/clang/lib/Lex/CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\Lex\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\CodeCompletionHandler.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\DirectoryLookup.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\ExternalPreprocessorSource.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\HeaderMap.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\HeaderSearch.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\HeaderSearchOptions.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\LexDiagnostic.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\Lexer.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\LiteralSupport.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\MacroArgs.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\MacroInfo.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\ModuleLoader.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\ModuleMap.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\MultipleIncludeOpt.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\PPCallbacks.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\PPConditionalDirectiveRecord.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\Pragma.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\PreprocessingRecord.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\Preprocessor.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\PreprocessorLexer.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\PreprocessorOptions.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\PTHLexer.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\PTHManager.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\ScratchBuffer.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\Token.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\TokenConcatenation.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\include\clang\Lex\TokenLexer.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\UnicodeCharSets.h" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\HeaderMap.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\HeaderSearch.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\Lexer.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\LiteralSupport.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\MacroArgs.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\MacroInfo.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\ModuleMap.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\PPCaching.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\PPCallbacks.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\PPConditionalDirectiveRecord.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\PPDirectives.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\PPExpressions.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\PPLexerChange.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\PPMacroExpansion.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\PTHLexer.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\Pragma.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\PreprocessingRecord.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\Preprocessor.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\PreprocessorLexer.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\ScratchBuffer.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\TokenConcatenation.cpp" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\Lex\TokenLexer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangARMNeon.vcxproj">
+      <Project>85ABBBE0-32D6-4619-9E36-15E399F157D2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/AST/ClangAttrClasses.vcxproj">
+      <Project>10F22EA0-D495-41F4-942E-9DD0CE4E3603</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/AST/ClangAttrDump.vcxproj">
+      <Project>7F63B8F0-615A-44D0-9CF1-96D55EA2F036</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangAttrHasAttributeImpl.vcxproj">
+      <Project>131E704E-856C-43AD-8410-D910CCD237DE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/AST/ClangAttrImpl.vcxproj">
+      <Project>676B7892-1366-4B89-87E6-4EF9DEC7D260</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangAttrList.vcxproj">
+      <Project>68019632-C77F-4E4F-9A19-0488656BF748</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Serialization/ClangAttrPCHRead.vcxproj">
+      <Project>78DB6005-9E8D-42F2-9FBD-2B15BBBA5E06</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Serialization/ClangAttrPCHWrite.vcxproj">
+      <Project>F39EB5B1-D6C9-416E-BFAB-0E151479A6EB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Sema/ClangAttrParsedAttrImpl.vcxproj">
+      <Project>DB8AA310-0FB1-4568-A18F-BD9D647EBB1E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Sema/ClangAttrParsedAttrKinds.vcxproj">
+      <Project>74461032-9506-44F1-BA24-5655A97C8B21</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Sema/ClangAttrParsedAttrList.vcxproj">
+      <Project>664BC555-9A81-49C6-8E32-7AF546AAA915</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Parse/ClangAttrParserStringSwitches.vcxproj">
+      <Project>4B6D8CCD-92FF-4CEA-89BA-EC3224A59980</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Sema/ClangAttrSpellingListIndex.vcxproj">
+      <Project>C538D660-6774-452D-9A9B-482B345FBDA6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Sema/ClangAttrTemplateInstantiate.vcxproj">
+      <Project>0ACF4055-47D0-45C4-866D-95F6AB95A787</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/AST/ClangAttrVisitor.vcxproj">
+      <Project>7DD3BD18-2DE2-4622-8E31-7D4566AD58E5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/AST/ClangCommentCommandInfo.vcxproj">
+      <Project>A8C82E6E-9B29-4CDB-9488-5645CFF740A3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/AST/ClangCommentCommandList.vcxproj">
+      <Project>40C01AA5-E5A3-4CCB-92B0-B146736CFF15</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/AST/ClangCommentHTMLNamedCharacterReferences.vcxproj">
+      <Project>33543FAA-12DF-49B8-8EB1-D86E92FA27E4</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/AST/ClangCommentHTMLTags.vcxproj">
+      <Project>252FDC7D-DCF8-4C88-8FBE-F9F346781E9A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/AST/ClangCommentHTMLTagsProperties.vcxproj">
+      <Project>D6B80A4B-D162-44D8-A984-A3FA0C3C3E63</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/AST/ClangCommentNodes.vcxproj">
+      <Project>BB2B0FFE-AF73-469B-9CAE-0A2C28DC8F30</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/AST/ClangDeclNodes.vcxproj">
+      <Project>2DE95B7F-37AB-4AE3-A0F6-8CE4DFDCDEAE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangDiagnosticAST.vcxproj">
+      <Project>EB998994-FB2A-4803-8439-0C288A188D50</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangDiagnosticAnalysis.vcxproj">
+      <Project>09A6F434-6CA6-4C68-9E9B-313A7A37B1F1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangDiagnosticComment.vcxproj">
+      <Project>51A7E0BD-6A7C-4E36-A552-ABBA90BF4B44</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangDiagnosticCommon.vcxproj">
+      <Project>748C1F19-A39B-4BC6-8F33-A64A3CB163A5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangDiagnosticDriver.vcxproj">
+      <Project>8E36B3BD-596C-489F-A538-CC2E530D75BD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangDiagnosticFrontend.vcxproj">
+      <Project>8890E5D9-CB43-4BA2-9764-8B0DA30AA7AE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangDiagnosticGroups.vcxproj">
+      <Project>81EE5017-1757-48FC-AB6B-B9E73501EC36</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangDiagnosticIndexName.vcxproj">
+      <Project>F70B09FE-613F-4FB4-8DDB-08ACFF92FB1B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangDiagnosticLex.vcxproj">
+      <Project>8E1C8640-7E9F-4FDE-9BE8-DF139167CC17</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangDiagnosticParse.vcxproj">
+      <Project>72E5F42A-96DB-44C9-B0E7-57ADC2088DF9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangDiagnosticSema.vcxproj">
+      <Project>DED3EE8E-90F7-42EE-AA4A-B47541BCB607</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangDiagnosticSerialization.vcxproj">
+      <Project>AB9B1037-C735-4392-8676-0422B8CCD44B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/AST/ClangStmtNodes.vcxproj">
+      <Project>682F2A47-E740-4412-985C-5C89D675D68E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/ZERO_CHECK.vcxproj">
+      <Project>6F14D479-D3E4-43D2-BD8C-39FC1FC313EA</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

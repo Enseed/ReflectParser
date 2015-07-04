@@ -1,0 +1,655 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{35F78600-3A35-4926-83EF-680BCCEE4C39}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>LTO</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Work\Public\Reflect\External\build\llvm\Debug\bin\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LTO.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LTO</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Work\Public\Reflect\External\build\llvm\Release\bin\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LTO.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LTO</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Work\Public\Reflect\External\build\llvm\MinSizeRel\bin\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">LTO.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">LTO</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</GenerateManifest>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Work\Public\Reflect\External\build\llvm\RelWithDebInfo\bin\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">LTO.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">LTO</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.dll</TargetExt>
+      <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</LinkIncremental>
+      <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</GenerateManifest>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -w14062 /EHs-c- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\lto;C:\Work\Public\Reflect\External\llvm\tools\lto;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Debug";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"Debug\";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\lto;C:\Work\Public\Reflect\External\llvm\tools\lto;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\lto;C:\Work\Public\Reflect\External\llvm\tools\lto;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\Debug\lib\LLVMAArch64CodeGen.lib;..\..\Debug\lib\LLVMAArch64AsmPrinter.lib;..\..\Debug\lib\LLVMAArch64AsmParser.lib;..\..\Debug\lib\LLVMAArch64Desc.lib;..\..\Debug\lib\LLVMAArch64Info.lib;..\..\Debug\lib\LLVMAArch64Disassembler.lib;..\..\Debug\lib\LLVMAMDGPUCodeGen.lib;..\..\Debug\lib\LLVMAMDGPUAsmPrinter.lib;..\..\Debug\lib\LLVMAMDGPUAsmParser.lib;..\..\Debug\lib\LLVMAMDGPUDesc.lib;..\..\Debug\lib\LLVMAMDGPUInfo.lib;..\..\Debug\lib\LLVMARMCodeGen.lib;..\..\Debug\lib\LLVMARMAsmPrinter.lib;..\..\Debug\lib\LLVMARMAsmParser.lib;..\..\Debug\lib\LLVMARMDesc.lib;..\..\Debug\lib\LLVMARMInfo.lib;..\..\Debug\lib\LLVMARMDisassembler.lib;..\..\Debug\lib\LLVMBPFCodeGen.lib;..\..\Debug\lib\LLVMBPFAsmPrinter.lib;..\..\Debug\lib\LLVMBPFDesc.lib;..\..\Debug\lib\LLVMBPFInfo.lib;..\..\Debug\lib\LLVMCppBackendCodeGen.lib;..\..\Debug\lib\LLVMCppBackendInfo.lib;..\..\Debug\lib\LLVMHexagonCodeGen.lib;..\..\Debug\lib\LLVMHexagonDesc.lib;..\..\Debug\lib\LLVMHexagonInfo.lib;..\..\Debug\lib\LLVMHexagonDisassembler.lib;..\..\Debug\lib\LLVMMipsCodeGen.lib;..\..\Debug\lib\LLVMMipsAsmPrinter.lib;..\..\Debug\lib\LLVMMipsAsmParser.lib;..\..\Debug\lib\LLVMMipsDesc.lib;..\..\Debug\lib\LLVMMipsInfo.lib;..\..\Debug\lib\LLVMMipsDisassembler.lib;..\..\Debug\lib\LLVMMSP430CodeGen.lib;..\..\Debug\lib\LLVMMSP430AsmPrinter.lib;..\..\Debug\lib\LLVMMSP430Desc.lib;..\..\Debug\lib\LLVMMSP430Info.lib;..\..\Debug\lib\LLVMNVPTXCodeGen.lib;..\..\Debug\lib\LLVMNVPTXAsmPrinter.lib;..\..\Debug\lib\LLVMNVPTXDesc.lib;..\..\Debug\lib\LLVMNVPTXInfo.lib;..\..\Debug\lib\LLVMPowerPCCodeGen.lib;..\..\Debug\lib\LLVMPowerPCAsmPrinter.lib;..\..\Debug\lib\LLVMPowerPCAsmParser.lib;..\..\Debug\lib\LLVMPowerPCDesc.lib;..\..\Debug\lib\LLVMPowerPCInfo.lib;..\..\Debug\lib\LLVMPowerPCDisassembler.lib;..\..\Debug\lib\LLVMSparcCodeGen.lib;..\..\Debug\lib\LLVMSparcAsmPrinter.lib;..\..\Debug\lib\LLVMSparcAsmParser.lib;..\..\Debug\lib\LLVMSparcDesc.lib;..\..\Debug\lib\LLVMSparcInfo.lib;..\..\Debug\lib\LLVMSparcDisassembler.lib;..\..\Debug\lib\LLVMSystemZCodeGen.lib;..\..\Debug\lib\LLVMSystemZAsmPrinter.lib;..\..\Debug\lib\LLVMSystemZAsmParser.lib;..\..\Debug\lib\LLVMSystemZDesc.lib;..\..\Debug\lib\LLVMSystemZInfo.lib;..\..\Debug\lib\LLVMSystemZDisassembler.lib;..\..\Debug\lib\LLVMX86CodeGen.lib;..\..\Debug\lib\LLVMX86AsmPrinter.lib;..\..\Debug\lib\LLVMX86AsmParser.lib;..\..\Debug\lib\LLVMX86Desc.lib;..\..\Debug\lib\LLVMX86Info.lib;..\..\Debug\lib\LLVMX86Disassembler.lib;..\..\Debug\lib\LLVMXCoreCodeGen.lib;..\..\Debug\lib\LLVMXCoreAsmPrinter.lib;..\..\Debug\lib\LLVMXCoreDesc.lib;..\..\Debug\lib\LLVMXCoreInfo.lib;..\..\Debug\lib\LLVMXCoreDisassembler.lib;..\..\Debug\lib\LLVMCore.lib;..\..\Debug\lib\LLVMLTO.lib;..\..\Debug\lib\LLVMMC.lib;..\..\Debug\lib\LLVMMCDisassembler.lib;..\..\Debug\lib\LLVMSupport.lib;..\..\Debug\lib\LLVMTarget.lib;..\..\Debug\lib\LLVMAArch64Desc.lib;..\..\Debug\lib\LLVMAArch64AsmPrinter.lib;..\..\Debug\lib\LLVMAArch64Info.lib;..\..\Debug\lib\LLVMAArch64Utils.lib;..\..\Debug\lib\LLVMAMDGPUAsmPrinter.lib;..\..\Debug\lib\LLVMAMDGPUUtils.lib;..\..\Debug\lib\LLVMARMDesc.lib;..\..\Debug\lib\LLVMARMAsmPrinter.lib;..\..\Debug\lib\LLVMARMInfo.lib;..\..\Debug\lib\LLVMBPFAsmPrinter.lib;..\..\Debug\lib\LLVMHexagonDesc.lib;..\..\Debug\lib\LLVMHexagonInfo.lib;..\..\Debug\lib\LLVMMipsAsmPrinter.lib;..\..\Debug\lib\LLVMMipsInfo.lib;..\..\Debug\lib\LLVMMSP430AsmPrinter.lib;..\..\Debug\lib\LLVMNVPTXAsmPrinter.lib;..\..\Debug\lib\LLVMPowerPCAsmPrinter.lib;..\..\Debug\lib\LLVMPowerPCInfo.lib;..\..\Debug\lib\LLVMSparcAsmPrinter.lib;..\..\Debug\lib\LLVMSparcInfo.lib;..\..\Debug\lib\LLVMSystemZDesc.lib;..\..\Debug\lib\LLVMSystemZAsmPrinter.lib;..\..\Debug\lib\LLVMSystemZInfo.lib;..\..\Debug\lib\LLVMX86CodeGen.lib;..\..\Debug\lib\LLVMX86Desc.lib;..\..\Debug\lib\LLVMX86AsmPrinter.lib;..\..\Debug\lib\LLVMX86Utils.lib;..\..\Debug\lib\LLVMX86Info.lib;..\..\Debug\lib\LLVMXCoreAsmPrinter.lib;..\..\Debug\lib\LLVMAsmPrinter.lib;..\..\Debug\lib\LLVMSelectionDAG.lib;..\..\Debug\lib\LLVMXCoreInfo.lib;..\..\Debug\lib\LLVMMCDisassembler.lib;..\..\Debug\lib\LLVMCodeGen.lib;..\..\Debug\lib\LLVMTarget.lib;..\..\Debug\lib\LLVMInstrumentation.lib;..\..\Debug\lib\LLVMipo.lib;..\..\Debug\lib\LLVMScalarOpts.lib;..\..\Debug\lib\LLVMProfileData.lib;..\..\Debug\lib\LLVMVectorize.lib;..\..\Debug\lib\LLVMObject.lib;..\..\Debug\lib\LLVMMCParser.lib;..\..\Debug\lib\LLVMMC.lib;..\..\Debug\lib\LLVMBitReader.lib;..\..\Debug\lib\LLVMBitWriter.lib;..\..\Debug\lib\LLVMInstCombine.lib;..\..\Debug\lib\LLVMLinker.lib;..\..\Debug\lib\LLVMObjCARCOpts.lib;..\..\Debug\lib\LLVMTransformUtils.lib;..\..\Debug\lib\LLVMipa.lib;..\..\Debug\lib\LLVMAnalysis.lib;..\..\Debug\lib\LLVMCore.lib;..\..\Debug\lib\LLVMSupport.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Work/Public/Reflect/External/build/llvm/Debug/lib/LTO.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Work/Public/Reflect/External/build/llvm/tools/lto/LTO.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Work/Public/Reflect/External/build/llvm/Debug/bin/LTO.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -w14062 /EHs-c- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\lto;C:\Work\Public\Reflect\External\llvm\tools\lto;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Release";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"Release\";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\lto;C:\Work\Public\Reflect\External\llvm\tools\lto;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\lto;C:\Work\Public\Reflect\External\llvm\tools\lto;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\Release\lib\LLVMAArch64CodeGen.lib;..\..\Release\lib\LLVMAArch64AsmPrinter.lib;..\..\Release\lib\LLVMAArch64AsmParser.lib;..\..\Release\lib\LLVMAArch64Desc.lib;..\..\Release\lib\LLVMAArch64Info.lib;..\..\Release\lib\LLVMAArch64Disassembler.lib;..\..\Release\lib\LLVMAMDGPUCodeGen.lib;..\..\Release\lib\LLVMAMDGPUAsmPrinter.lib;..\..\Release\lib\LLVMAMDGPUAsmParser.lib;..\..\Release\lib\LLVMAMDGPUDesc.lib;..\..\Release\lib\LLVMAMDGPUInfo.lib;..\..\Release\lib\LLVMARMCodeGen.lib;..\..\Release\lib\LLVMARMAsmPrinter.lib;..\..\Release\lib\LLVMARMAsmParser.lib;..\..\Release\lib\LLVMARMDesc.lib;..\..\Release\lib\LLVMARMInfo.lib;..\..\Release\lib\LLVMARMDisassembler.lib;..\..\Release\lib\LLVMBPFCodeGen.lib;..\..\Release\lib\LLVMBPFAsmPrinter.lib;..\..\Release\lib\LLVMBPFDesc.lib;..\..\Release\lib\LLVMBPFInfo.lib;..\..\Release\lib\LLVMCppBackendCodeGen.lib;..\..\Release\lib\LLVMCppBackendInfo.lib;..\..\Release\lib\LLVMHexagonCodeGen.lib;..\..\Release\lib\LLVMHexagonDesc.lib;..\..\Release\lib\LLVMHexagonInfo.lib;..\..\Release\lib\LLVMHexagonDisassembler.lib;..\..\Release\lib\LLVMMipsCodeGen.lib;..\..\Release\lib\LLVMMipsAsmPrinter.lib;..\..\Release\lib\LLVMMipsAsmParser.lib;..\..\Release\lib\LLVMMipsDesc.lib;..\..\Release\lib\LLVMMipsInfo.lib;..\..\Release\lib\LLVMMipsDisassembler.lib;..\..\Release\lib\LLVMMSP430CodeGen.lib;..\..\Release\lib\LLVMMSP430AsmPrinter.lib;..\..\Release\lib\LLVMMSP430Desc.lib;..\..\Release\lib\LLVMMSP430Info.lib;..\..\Release\lib\LLVMNVPTXCodeGen.lib;..\..\Release\lib\LLVMNVPTXAsmPrinter.lib;..\..\Release\lib\LLVMNVPTXDesc.lib;..\..\Release\lib\LLVMNVPTXInfo.lib;..\..\Release\lib\LLVMPowerPCCodeGen.lib;..\..\Release\lib\LLVMPowerPCAsmPrinter.lib;..\..\Release\lib\LLVMPowerPCAsmParser.lib;..\..\Release\lib\LLVMPowerPCDesc.lib;..\..\Release\lib\LLVMPowerPCInfo.lib;..\..\Release\lib\LLVMPowerPCDisassembler.lib;..\..\Release\lib\LLVMSparcCodeGen.lib;..\..\Release\lib\LLVMSparcAsmPrinter.lib;..\..\Release\lib\LLVMSparcAsmParser.lib;..\..\Release\lib\LLVMSparcDesc.lib;..\..\Release\lib\LLVMSparcInfo.lib;..\..\Release\lib\LLVMSparcDisassembler.lib;..\..\Release\lib\LLVMSystemZCodeGen.lib;..\..\Release\lib\LLVMSystemZAsmPrinter.lib;..\..\Release\lib\LLVMSystemZAsmParser.lib;..\..\Release\lib\LLVMSystemZDesc.lib;..\..\Release\lib\LLVMSystemZInfo.lib;..\..\Release\lib\LLVMSystemZDisassembler.lib;..\..\Release\lib\LLVMX86CodeGen.lib;..\..\Release\lib\LLVMX86AsmPrinter.lib;..\..\Release\lib\LLVMX86AsmParser.lib;..\..\Release\lib\LLVMX86Desc.lib;..\..\Release\lib\LLVMX86Info.lib;..\..\Release\lib\LLVMX86Disassembler.lib;..\..\Release\lib\LLVMXCoreCodeGen.lib;..\..\Release\lib\LLVMXCoreAsmPrinter.lib;..\..\Release\lib\LLVMXCoreDesc.lib;..\..\Release\lib\LLVMXCoreInfo.lib;..\..\Release\lib\LLVMXCoreDisassembler.lib;..\..\Release\lib\LLVMCore.lib;..\..\Release\lib\LLVMLTO.lib;..\..\Release\lib\LLVMMC.lib;..\..\Release\lib\LLVMMCDisassembler.lib;..\..\Release\lib\LLVMSupport.lib;..\..\Release\lib\LLVMTarget.lib;..\..\Release\lib\LLVMAArch64Desc.lib;..\..\Release\lib\LLVMAArch64AsmPrinter.lib;..\..\Release\lib\LLVMAArch64Info.lib;..\..\Release\lib\LLVMAArch64Utils.lib;..\..\Release\lib\LLVMAMDGPUAsmPrinter.lib;..\..\Release\lib\LLVMAMDGPUUtils.lib;..\..\Release\lib\LLVMARMDesc.lib;..\..\Release\lib\LLVMARMAsmPrinter.lib;..\..\Release\lib\LLVMARMInfo.lib;..\..\Release\lib\LLVMBPFAsmPrinter.lib;..\..\Release\lib\LLVMHexagonDesc.lib;..\..\Release\lib\LLVMHexagonInfo.lib;..\..\Release\lib\LLVMMipsAsmPrinter.lib;..\..\Release\lib\LLVMMipsInfo.lib;..\..\Release\lib\LLVMMSP430AsmPrinter.lib;..\..\Release\lib\LLVMNVPTXAsmPrinter.lib;..\..\Release\lib\LLVMPowerPCAsmPrinter.lib;..\..\Release\lib\LLVMPowerPCInfo.lib;..\..\Release\lib\LLVMSparcAsmPrinter.lib;..\..\Release\lib\LLVMSparcInfo.lib;..\..\Release\lib\LLVMSystemZDesc.lib;..\..\Release\lib\LLVMSystemZAsmPrinter.lib;..\..\Release\lib\LLVMSystemZInfo.lib;..\..\Release\lib\LLVMX86CodeGen.lib;..\..\Release\lib\LLVMX86Desc.lib;..\..\Release\lib\LLVMX86AsmPrinter.lib;..\..\Release\lib\LLVMX86Utils.lib;..\..\Release\lib\LLVMX86Info.lib;..\..\Release\lib\LLVMXCoreAsmPrinter.lib;..\..\Release\lib\LLVMAsmPrinter.lib;..\..\Release\lib\LLVMSelectionDAG.lib;..\..\Release\lib\LLVMXCoreInfo.lib;..\..\Release\lib\LLVMMCDisassembler.lib;..\..\Release\lib\LLVMCodeGen.lib;..\..\Release\lib\LLVMTarget.lib;..\..\Release\lib\LLVMInstrumentation.lib;..\..\Release\lib\LLVMipo.lib;..\..\Release\lib\LLVMScalarOpts.lib;..\..\Release\lib\LLVMProfileData.lib;..\..\Release\lib\LLVMVectorize.lib;..\..\Release\lib\LLVMObject.lib;..\..\Release\lib\LLVMMCParser.lib;..\..\Release\lib\LLVMMC.lib;..\..\Release\lib\LLVMBitReader.lib;..\..\Release\lib\LLVMBitWriter.lib;..\..\Release\lib\LLVMInstCombine.lib;..\..\Release\lib\LLVMLinker.lib;..\..\Release\lib\LLVMObjCARCOpts.lib;..\..\Release\lib\LLVMTransformUtils.lib;..\..\Release\lib\LLVMipa.lib;..\..\Release\lib\LLVMAnalysis.lib;..\..\Release\lib\LLVMCore.lib;..\..\Release\lib\LLVMSupport.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Work/Public/Reflect/External/build/llvm/Release/lib/LTO.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Work/Public/Reflect/External/build/llvm/tools/lto/LTO.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Work/Public/Reflect/External/build/llvm/Release/bin/LTO.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -w14062 /EHs-c- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\lto;C:\Work\Public\Reflect\External\llvm\tools\lto;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="MinSizeRel";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"MinSizeRel\";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\lto;C:\Work\Public\Reflect\External\llvm\tools\lto;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\lto;C:\Work\Public\Reflect\External\llvm\tools\lto;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\MinSizeRel\lib\LLVMAArch64CodeGen.lib;..\..\MinSizeRel\lib\LLVMAArch64AsmPrinter.lib;..\..\MinSizeRel\lib\LLVMAArch64AsmParser.lib;..\..\MinSizeRel\lib\LLVMAArch64Desc.lib;..\..\MinSizeRel\lib\LLVMAArch64Info.lib;..\..\MinSizeRel\lib\LLVMAArch64Disassembler.lib;..\..\MinSizeRel\lib\LLVMAMDGPUCodeGen.lib;..\..\MinSizeRel\lib\LLVMAMDGPUAsmPrinter.lib;..\..\MinSizeRel\lib\LLVMAMDGPUAsmParser.lib;..\..\MinSizeRel\lib\LLVMAMDGPUDesc.lib;..\..\MinSizeRel\lib\LLVMAMDGPUInfo.lib;..\..\MinSizeRel\lib\LLVMARMCodeGen.lib;..\..\MinSizeRel\lib\LLVMARMAsmPrinter.lib;..\..\MinSizeRel\lib\LLVMARMAsmParser.lib;..\..\MinSizeRel\lib\LLVMARMDesc.lib;..\..\MinSizeRel\lib\LLVMARMInfo.lib;..\..\MinSizeRel\lib\LLVMARMDisassembler.lib;..\..\MinSizeRel\lib\LLVMBPFCodeGen.lib;..\..\MinSizeRel\lib\LLVMBPFAsmPrinter.lib;..\..\MinSizeRel\lib\LLVMBPFDesc.lib;..\..\MinSizeRel\lib\LLVMBPFInfo.lib;..\..\MinSizeRel\lib\LLVMCppBackendCodeGen.lib;..\..\MinSizeRel\lib\LLVMCppBackendInfo.lib;..\..\MinSizeRel\lib\LLVMHexagonCodeGen.lib;..\..\MinSizeRel\lib\LLVMHexagonDesc.lib;..\..\MinSizeRel\lib\LLVMHexagonInfo.lib;..\..\MinSizeRel\lib\LLVMHexagonDisassembler.lib;..\..\MinSizeRel\lib\LLVMMipsCodeGen.lib;..\..\MinSizeRel\lib\LLVMMipsAsmPrinter.lib;..\..\MinSizeRel\lib\LLVMMipsAsmParser.lib;..\..\MinSizeRel\lib\LLVMMipsDesc.lib;..\..\MinSizeRel\lib\LLVMMipsInfo.lib;..\..\MinSizeRel\lib\LLVMMipsDisassembler.lib;..\..\MinSizeRel\lib\LLVMMSP430CodeGen.lib;..\..\MinSizeRel\lib\LLVMMSP430AsmPrinter.lib;..\..\MinSizeRel\lib\LLVMMSP430Desc.lib;..\..\MinSizeRel\lib\LLVMMSP430Info.lib;..\..\MinSizeRel\lib\LLVMNVPTXCodeGen.lib;..\..\MinSizeRel\lib\LLVMNVPTXAsmPrinter.lib;..\..\MinSizeRel\lib\LLVMNVPTXDesc.lib;..\..\MinSizeRel\lib\LLVMNVPTXInfo.lib;..\..\MinSizeRel\lib\LLVMPowerPCCodeGen.lib;..\..\MinSizeRel\lib\LLVMPowerPCAsmPrinter.lib;..\..\MinSizeRel\lib\LLVMPowerPCAsmParser.lib;..\..\MinSizeRel\lib\LLVMPowerPCDesc.lib;..\..\MinSizeRel\lib\LLVMPowerPCInfo.lib;..\..\MinSizeRel\lib\LLVMPowerPCDisassembler.lib;..\..\MinSizeRel\lib\LLVMSparcCodeGen.lib;..\..\MinSizeRel\lib\LLVMSparcAsmPrinter.lib;..\..\MinSizeRel\lib\LLVMSparcAsmParser.lib;..\..\MinSizeRel\lib\LLVMSparcDesc.lib;..\..\MinSizeRel\lib\LLVMSparcInfo.lib;..\..\MinSizeRel\lib\LLVMSparcDisassembler.lib;..\..\MinSizeRel\lib\LLVMSystemZCodeGen.lib;..\..\MinSizeRel\lib\LLVMSystemZAsmPrinter.lib;..\..\MinSizeRel\lib\LLVMSystemZAsmParser.lib;..\..\MinSizeRel\lib\LLVMSystemZDesc.lib;..\..\MinSizeRel\lib\LLVMSystemZInfo.lib;..\..\MinSizeRel\lib\LLVMSystemZDisassembler.lib;..\..\MinSizeRel\lib\LLVMX86CodeGen.lib;..\..\MinSizeRel\lib\LLVMX86AsmPrinter.lib;..\..\MinSizeRel\lib\LLVMX86AsmParser.lib;..\..\MinSizeRel\lib\LLVMX86Desc.lib;..\..\MinSizeRel\lib\LLVMX86Info.lib;..\..\MinSizeRel\lib\LLVMX86Disassembler.lib;..\..\MinSizeRel\lib\LLVMXCoreCodeGen.lib;..\..\MinSizeRel\lib\LLVMXCoreAsmPrinter.lib;..\..\MinSizeRel\lib\LLVMXCoreDesc.lib;..\..\MinSizeRel\lib\LLVMXCoreInfo.lib;..\..\MinSizeRel\lib\LLVMXCoreDisassembler.lib;..\..\MinSizeRel\lib\LLVMCore.lib;..\..\MinSizeRel\lib\LLVMLTO.lib;..\..\MinSizeRel\lib\LLVMMC.lib;..\..\MinSizeRel\lib\LLVMMCDisassembler.lib;..\..\MinSizeRel\lib\LLVMSupport.lib;..\..\MinSizeRel\lib\LLVMTarget.lib;..\..\MinSizeRel\lib\LLVMAArch64Desc.lib;..\..\MinSizeRel\lib\LLVMAArch64AsmPrinter.lib;..\..\MinSizeRel\lib\LLVMAArch64Info.lib;..\..\MinSizeRel\lib\LLVMAArch64Utils.lib;..\..\MinSizeRel\lib\LLVMAMDGPUAsmPrinter.lib;..\..\MinSizeRel\lib\LLVMAMDGPUUtils.lib;..\..\MinSizeRel\lib\LLVMARMDesc.lib;..\..\MinSizeRel\lib\LLVMARMAsmPrinter.lib;..\..\MinSizeRel\lib\LLVMARMInfo.lib;..\..\MinSizeRel\lib\LLVMBPFAsmPrinter.lib;..\..\MinSizeRel\lib\LLVMHexagonDesc.lib;..\..\MinSizeRel\lib\LLVMHexagonInfo.lib;..\..\MinSizeRel\lib\LLVMMipsAsmPrinter.lib;..\..\MinSizeRel\lib\LLVMMipsInfo.lib;..\..\MinSizeRel\lib\LLVMMSP430AsmPrinter.lib;..\..\MinSizeRel\lib\LLVMNVPTXAsmPrinter.lib;..\..\MinSizeRel\lib\LLVMPowerPCAsmPrinter.lib;..\..\MinSizeRel\lib\LLVMPowerPCInfo.lib;..\..\MinSizeRel\lib\LLVMSparcAsmPrinter.lib;..\..\MinSizeRel\lib\LLVMSparcInfo.lib;..\..\MinSizeRel\lib\LLVMSystemZDesc.lib;..\..\MinSizeRel\lib\LLVMSystemZAsmPrinter.lib;..\..\MinSizeRel\lib\LLVMSystemZInfo.lib;..\..\MinSizeRel\lib\LLVMX86CodeGen.lib;..\..\MinSizeRel\lib\LLVMX86Desc.lib;..\..\MinSizeRel\lib\LLVMX86AsmPrinter.lib;..\..\MinSizeRel\lib\LLVMX86Utils.lib;..\..\MinSizeRel\lib\LLVMX86Info.lib;..\..\MinSizeRel\lib\LLVMXCoreAsmPrinter.lib;..\..\MinSizeRel\lib\LLVMAsmPrinter.lib;..\..\MinSizeRel\lib\LLVMSelectionDAG.lib;..\..\MinSizeRel\lib\LLVMXCoreInfo.lib;..\..\MinSizeRel\lib\LLVMMCDisassembler.lib;..\..\MinSizeRel\lib\LLVMCodeGen.lib;..\..\MinSizeRel\lib\LLVMTarget.lib;..\..\MinSizeRel\lib\LLVMInstrumentation.lib;..\..\MinSizeRel\lib\LLVMipo.lib;..\..\MinSizeRel\lib\LLVMScalarOpts.lib;..\..\MinSizeRel\lib\LLVMProfileData.lib;..\..\MinSizeRel\lib\LLVMVectorize.lib;..\..\MinSizeRel\lib\LLVMObject.lib;..\..\MinSizeRel\lib\LLVMMCParser.lib;..\..\MinSizeRel\lib\LLVMMC.lib;..\..\MinSizeRel\lib\LLVMBitReader.lib;..\..\MinSizeRel\lib\LLVMBitWriter.lib;..\..\MinSizeRel\lib\LLVMInstCombine.lib;..\..\MinSizeRel\lib\LLVMLinker.lib;..\..\MinSizeRel\lib\LLVMObjCARCOpts.lib;..\..\MinSizeRel\lib\LLVMTransformUtils.lib;..\..\MinSizeRel\lib\LLVMipa.lib;..\..\MinSizeRel\lib\LLVMAnalysis.lib;..\..\MinSizeRel\lib\LLVMCore.lib;..\..\MinSizeRel\lib\LLVMSupport.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Work/Public/Reflect/External/build/llvm/MinSizeRel/lib/LTO.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Work/Public/Reflect/External/build/llvm/tools/lto/LTO.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Work/Public/Reflect/External/build/llvm/MinSizeRel/bin/LTO.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -w14062 /EHs-c- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\lto;C:\Work\Public\Reflect\External\llvm\tools\lto;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="RelWithDebInfo";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"RelWithDebInfo\";;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\lto;C:\Work\Public\Reflect\External\llvm\tools\lto;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\lto;C:\Work\Public\Reflect\External\llvm\tools\lto;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalOptions> /machine:X86 /debug %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib;..\..\RelWithDebInfo\lib\LLVMAArch64CodeGen.lib;..\..\RelWithDebInfo\lib\LLVMAArch64AsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMAArch64AsmParser.lib;..\..\RelWithDebInfo\lib\LLVMAArch64Desc.lib;..\..\RelWithDebInfo\lib\LLVMAArch64Info.lib;..\..\RelWithDebInfo\lib\LLVMAArch64Disassembler.lib;..\..\RelWithDebInfo\lib\LLVMAMDGPUCodeGen.lib;..\..\RelWithDebInfo\lib\LLVMAMDGPUAsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMAMDGPUAsmParser.lib;..\..\RelWithDebInfo\lib\LLVMAMDGPUDesc.lib;..\..\RelWithDebInfo\lib\LLVMAMDGPUInfo.lib;..\..\RelWithDebInfo\lib\LLVMARMCodeGen.lib;..\..\RelWithDebInfo\lib\LLVMARMAsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMARMAsmParser.lib;..\..\RelWithDebInfo\lib\LLVMARMDesc.lib;..\..\RelWithDebInfo\lib\LLVMARMInfo.lib;..\..\RelWithDebInfo\lib\LLVMARMDisassembler.lib;..\..\RelWithDebInfo\lib\LLVMBPFCodeGen.lib;..\..\RelWithDebInfo\lib\LLVMBPFAsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMBPFDesc.lib;..\..\RelWithDebInfo\lib\LLVMBPFInfo.lib;..\..\RelWithDebInfo\lib\LLVMCppBackendCodeGen.lib;..\..\RelWithDebInfo\lib\LLVMCppBackendInfo.lib;..\..\RelWithDebInfo\lib\LLVMHexagonCodeGen.lib;..\..\RelWithDebInfo\lib\LLVMHexagonDesc.lib;..\..\RelWithDebInfo\lib\LLVMHexagonInfo.lib;..\..\RelWithDebInfo\lib\LLVMHexagonDisassembler.lib;..\..\RelWithDebInfo\lib\LLVMMipsCodeGen.lib;..\..\RelWithDebInfo\lib\LLVMMipsAsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMMipsAsmParser.lib;..\..\RelWithDebInfo\lib\LLVMMipsDesc.lib;..\..\RelWithDebInfo\lib\LLVMMipsInfo.lib;..\..\RelWithDebInfo\lib\LLVMMipsDisassembler.lib;..\..\RelWithDebInfo\lib\LLVMMSP430CodeGen.lib;..\..\RelWithDebInfo\lib\LLVMMSP430AsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMMSP430Desc.lib;..\..\RelWithDebInfo\lib\LLVMMSP430Info.lib;..\..\RelWithDebInfo\lib\LLVMNVPTXCodeGen.lib;..\..\RelWithDebInfo\lib\LLVMNVPTXAsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMNVPTXDesc.lib;..\..\RelWithDebInfo\lib\LLVMNVPTXInfo.lib;..\..\RelWithDebInfo\lib\LLVMPowerPCCodeGen.lib;..\..\RelWithDebInfo\lib\LLVMPowerPCAsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMPowerPCAsmParser.lib;..\..\RelWithDebInfo\lib\LLVMPowerPCDesc.lib;..\..\RelWithDebInfo\lib\LLVMPowerPCInfo.lib;..\..\RelWithDebInfo\lib\LLVMPowerPCDisassembler.lib;..\..\RelWithDebInfo\lib\LLVMSparcCodeGen.lib;..\..\RelWithDebInfo\lib\LLVMSparcAsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMSparcAsmParser.lib;..\..\RelWithDebInfo\lib\LLVMSparcDesc.lib;..\..\RelWithDebInfo\lib\LLVMSparcInfo.lib;..\..\RelWithDebInfo\lib\LLVMSparcDisassembler.lib;..\..\RelWithDebInfo\lib\LLVMSystemZCodeGen.lib;..\..\RelWithDebInfo\lib\LLVMSystemZAsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMSystemZAsmParser.lib;..\..\RelWithDebInfo\lib\LLVMSystemZDesc.lib;..\..\RelWithDebInfo\lib\LLVMSystemZInfo.lib;..\..\RelWithDebInfo\lib\LLVMSystemZDisassembler.lib;..\..\RelWithDebInfo\lib\LLVMX86CodeGen.lib;..\..\RelWithDebInfo\lib\LLVMX86AsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMX86AsmParser.lib;..\..\RelWithDebInfo\lib\LLVMX86Desc.lib;..\..\RelWithDebInfo\lib\LLVMX86Info.lib;..\..\RelWithDebInfo\lib\LLVMX86Disassembler.lib;..\..\RelWithDebInfo\lib\LLVMXCoreCodeGen.lib;..\..\RelWithDebInfo\lib\LLVMXCoreAsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMXCoreDesc.lib;..\..\RelWithDebInfo\lib\LLVMXCoreInfo.lib;..\..\RelWithDebInfo\lib\LLVMXCoreDisassembler.lib;..\..\RelWithDebInfo\lib\LLVMCore.lib;..\..\RelWithDebInfo\lib\LLVMLTO.lib;..\..\RelWithDebInfo\lib\LLVMMC.lib;..\..\RelWithDebInfo\lib\LLVMMCDisassembler.lib;..\..\RelWithDebInfo\lib\LLVMSupport.lib;..\..\RelWithDebInfo\lib\LLVMTarget.lib;..\..\RelWithDebInfo\lib\LLVMAArch64Desc.lib;..\..\RelWithDebInfo\lib\LLVMAArch64AsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMAArch64Info.lib;..\..\RelWithDebInfo\lib\LLVMAArch64Utils.lib;..\..\RelWithDebInfo\lib\LLVMAMDGPUAsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMAMDGPUUtils.lib;..\..\RelWithDebInfo\lib\LLVMARMDesc.lib;..\..\RelWithDebInfo\lib\LLVMARMAsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMARMInfo.lib;..\..\RelWithDebInfo\lib\LLVMBPFAsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMHexagonDesc.lib;..\..\RelWithDebInfo\lib\LLVMHexagonInfo.lib;..\..\RelWithDebInfo\lib\LLVMMipsAsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMMipsInfo.lib;..\..\RelWithDebInfo\lib\LLVMMSP430AsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMNVPTXAsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMPowerPCAsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMPowerPCInfo.lib;..\..\RelWithDebInfo\lib\LLVMSparcAsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMSparcInfo.lib;..\..\RelWithDebInfo\lib\LLVMSystemZDesc.lib;..\..\RelWithDebInfo\lib\LLVMSystemZAsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMSystemZInfo.lib;..\..\RelWithDebInfo\lib\LLVMX86CodeGen.lib;..\..\RelWithDebInfo\lib\LLVMX86Desc.lib;..\..\RelWithDebInfo\lib\LLVMX86AsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMX86Utils.lib;..\..\RelWithDebInfo\lib\LLVMX86Info.lib;..\..\RelWithDebInfo\lib\LLVMXCoreAsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMAsmPrinter.lib;..\..\RelWithDebInfo\lib\LLVMSelectionDAG.lib;..\..\RelWithDebInfo\lib\LLVMXCoreInfo.lib;..\..\RelWithDebInfo\lib\LLVMMCDisassembler.lib;..\..\RelWithDebInfo\lib\LLVMCodeGen.lib;..\..\RelWithDebInfo\lib\LLVMTarget.lib;..\..\RelWithDebInfo\lib\LLVMInstrumentation.lib;..\..\RelWithDebInfo\lib\LLVMipo.lib;..\..\RelWithDebInfo\lib\LLVMScalarOpts.lib;..\..\RelWithDebInfo\lib\LLVMProfileData.lib;..\..\RelWithDebInfo\lib\LLVMVectorize.lib;..\..\RelWithDebInfo\lib\LLVMObject.lib;..\..\RelWithDebInfo\lib\LLVMMCParser.lib;..\..\RelWithDebInfo\lib\LLVMMC.lib;..\..\RelWithDebInfo\lib\LLVMBitReader.lib;..\..\RelWithDebInfo\lib\LLVMBitWriter.lib;..\..\RelWithDebInfo\lib\LLVMInstCombine.lib;..\..\RelWithDebInfo\lib\LLVMLinker.lib;..\..\RelWithDebInfo\lib\LLVMObjCARCOpts.lib;..\..\RelWithDebInfo\lib\LLVMTransformUtils.lib;..\..\RelWithDebInfo\lib\LLVMipa.lib;..\..\RelWithDebInfo\lib\LLVMAnalysis.lib;..\..\RelWithDebInfo\lib\LLVMCore.lib;..\..\RelWithDebInfo\lib\LLVMSupport.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Work/Public/Reflect/External/build/llvm/RelWithDebInfo/lib/LTO.lib</ImportLibrary>
+      <ModuleDefinitionFile>C:/Work/Public/Reflect/External/build/llvm/tools/lto/LTO.def</ModuleDefinitionFile>
+      <ProgramDataBaseFile>C:/Work/Public/Reflect/External/build/llvm/RelWithDebInfo/bin/LTO.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+      <Version></Version>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\llvm\tools\lto\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Work/Public/Reflect/External/llvm/tools/lto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Work/Public/Reflect/External/llvm -BC:/Work/Public/Reflect/External/build/llvm --check-stamp-file C:\Work\Public\Reflect\External\build\llvm\tools\lto\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Work/Public/Reflect/External/llvm/tools/lto/CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\tools\lto\CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\tools\lto\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Work\Public\Reflect\External\build\llvm\tools\lto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Work/Public/Reflect/External/llvm/tools/lto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Work/Public/Reflect/External/llvm -BC:/Work/Public/Reflect/External/build/llvm --check-stamp-file C:\Work\Public\Reflect\External\build\llvm\tools\lto\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Work/Public/Reflect/External/llvm/tools/lto/CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\tools\lto\CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\tools\lto\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Work\Public\Reflect\External\build\llvm\tools\lto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Work/Public/Reflect/External/llvm/tools/lto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Work/Public/Reflect/External/llvm -BC:/Work/Public/Reflect/External/build/llvm --check-stamp-file C:\Work\Public\Reflect\External\build\llvm\tools\lto\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Work/Public/Reflect/External/llvm/tools/lto/CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\tools\lto\CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\tools\lto\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Work\Public\Reflect\External\build\llvm\tools\lto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Work/Public/Reflect/External/llvm/tools/lto/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Work/Public/Reflect/External/llvm -BC:/Work/Public/Reflect/External/build/llvm --check-stamp-file C:\Work\Public\Reflect\External\build\llvm\tools\lto\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Work/Public/Reflect/External/llvm/tools/lto/CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\tools\lto\CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\tools\lto\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Work\Public\Reflect\External\build\llvm\tools\lto\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\lto\LTODisassembler.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\tools\lto\lto.cpp"  />
+    <ResourceCompile Include="C:\Work\Public\Reflect\External\llvm\resources\windows_version_resource.rc" >
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</SuppressStartupBanner>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">RC_VERSION_FIELD_1=3;RC_VERSION_FIELD_2=7;RC_VERSION_FIELD_3=0;RC_VERSION_FIELD_4=0;RC_FILE_VERSION=\"3.7.0svn\";RC_INTERNAL_NAME=\"LTO\";RC_PRODUCT_NAME=\"LLVM\";RC_PRODUCT_VERSION=\"3.7.0svn\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</SuppressStartupBanner>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">RC_VERSION_FIELD_1=3;RC_VERSION_FIELD_2=7;RC_VERSION_FIELD_3=0;RC_VERSION_FIELD_4=0;RC_FILE_VERSION=\"3.7.0svn\";RC_INTERNAL_NAME=\"LTO\";RC_PRODUCT_NAME=\"LLVM\";RC_PRODUCT_VERSION=\"3.7.0svn\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">true</SuppressStartupBanner>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">RC_VERSION_FIELD_1=3;RC_VERSION_FIELD_2=7;RC_VERSION_FIELD_3=0;RC_VERSION_FIELD_4=0;RC_FILE_VERSION=\"3.7.0svn\";RC_INTERNAL_NAME=\"LTO\";RC_PRODUCT_NAME=\"LLVM\";RC_PRODUCT_VERSION=\"3.7.0svn\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SuppressStartupBanner Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">true</SuppressStartupBanner>
+      <PreprocessorDefinitions Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">RC_VERSION_FIELD_1=3;RC_VERSION_FIELD_2=7;RC_VERSION_FIELD_3=0;RC_VERSION_FIELD_4=0;RC_FILE_VERSION=\"3.7.0svn\";RC_INTERNAL_NAME=\"LTO\";RC_PRODUCT_NAME=\"LLVM\";RC_PRODUCT_VERSION=\"3.7.0svn\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/AArch64/AsmParser/LLVMAArch64AsmParser.vcxproj">
+      <Project>458F0A61-0E5F-490F-B9EB-9DF4F82C9952</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/AArch64/InstPrinter/LLVMAArch64AsmPrinter.vcxproj">
+      <Project>ADA9B524-2AEC-4FA8-B40C-CDD27BF7E7D1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/AArch64/LLVMAArch64CodeGen.vcxproj">
+      <Project>78939F53-EA41-42A5-929D-0F415612D375</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/AArch64/MCTargetDesc/LLVMAArch64Desc.vcxproj">
+      <Project>000697D2-9D53-4197-BC4F-3B979755A3D0</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/AArch64/Disassembler/LLVMAArch64Disassembler.vcxproj">
+      <Project>EBE8DCD3-4195-4B6F-AD81-75EF971A63FD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/AArch64/TargetInfo/LLVMAArch64Info.vcxproj">
+      <Project>EE9DF960-B143-4D87-B424-9B6D713C676E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/AArch64/Utils/LLVMAArch64Utils.vcxproj">
+      <Project>0383A096-689C-42A6-8B96-BE5B5FD7D6D1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/AMDGPU/AsmParser/LLVMAMDGPUAsmParser.vcxproj">
+      <Project>473080B7-F90C-4B05-9E6B-396F609DDAD3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/AMDGPU/InstPrinter/LLVMAMDGPUAsmPrinter.vcxproj">
+      <Project>4940BC7D-5AA4-4D9A-9B1E-5ED074C85EAE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/AMDGPU/LLVMAMDGPUCodeGen.vcxproj">
+      <Project>0B8B77E7-459A-4E34-B272-E53CE474C71E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/AMDGPU/MCTargetDesc/LLVMAMDGPUDesc.vcxproj">
+      <Project>E7AB0797-DF94-42D9-B7A5-B2C94260487B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/AMDGPU/TargetInfo/LLVMAMDGPUInfo.vcxproj">
+      <Project>EA3D097C-12C0-465A-AD09-96105AA4C5F3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/AMDGPU/Utils/LLVMAMDGPUUtils.vcxproj">
+      <Project>663E163A-86F6-42CF-AFD9-D0CD8F733784</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/ARM/AsmParser/LLVMARMAsmParser.vcxproj">
+      <Project>C203E638-DE19-437F-AD6A-0C57F2E94394</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/ARM/InstPrinter/LLVMARMAsmPrinter.vcxproj">
+      <Project>A2CF1A07-01DD-468A-91E1-A57245CA0B81</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/ARM/LLVMARMCodeGen.vcxproj">
+      <Project>119852A8-E9FC-45C6-B133-389DA1D740B1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/ARM/MCTargetDesc/LLVMARMDesc.vcxproj">
+      <Project>F9423E21-59B3-47F5-82C8-1A7336C7BD90</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/ARM/Disassembler/LLVMARMDisassembler.vcxproj">
+      <Project>A517A054-D466-44F2-A627-44F269B78718</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/ARM/TargetInfo/LLVMARMInfo.vcxproj">
+      <Project>3EBB58D0-851F-4511-A4FE-66032BB9E8B0</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Analysis/LLVMAnalysis.vcxproj">
+      <Project>EB876833-EB34-4859-958E-361854D71A62</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/CodeGen/AsmPrinter/LLVMAsmPrinter.vcxproj">
+      <Project>006A9755-B30B-46AF-91BB-C776C7505C49</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/BPF/InstPrinter/LLVMBPFAsmPrinter.vcxproj">
+      <Project>424A3D60-066C-47C5-AA1B-FF7A357E5750</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/BPF/LLVMBPFCodeGen.vcxproj">
+      <Project>8F54B606-0673-44D4-B295-B387F0AB501E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/BPF/MCTargetDesc/LLVMBPFDesc.vcxproj">
+      <Project>CE0798DF-F0B7-41C2-B05E-D00FB12E4218</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/BPF/TargetInfo/LLVMBPFInfo.vcxproj">
+      <Project>5715A293-7D1C-41D2-B444-DC0CA6A15210</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Bitcode/Reader/LLVMBitReader.vcxproj">
+      <Project>72261738-2699-4A93-A466-F0DC807116CD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Bitcode/Writer/LLVMBitWriter.vcxproj">
+      <Project>B3106CBB-8FC2-443D-B194-EF1881D67F90</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/CodeGen/LLVMCodeGen.vcxproj">
+      <Project>5CB81379-9BE6-4000-98B5-1C6826ABA3B7</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/IR/LLVMCore.vcxproj">
+      <Project>A8041917-0908-46CF-B053-D40B8C574252</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/CppBackend/LLVMCppBackendCodeGen.vcxproj">
+      <Project>5E76DA77-AB26-44AF-941B-32BE30A11A5D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/CppBackend/TargetInfo/LLVMCppBackendInfo.vcxproj">
+      <Project>0F0F9702-A46B-4A41-8B7F-7708218BFAFD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/Hexagon/LLVMHexagonCodeGen.vcxproj">
+      <Project>A155F236-72B9-471A-9F87-F2D1DC34A5B4</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/Hexagon/MCTargetDesc/LLVMHexagonDesc.vcxproj">
+      <Project>16464097-DF5F-4B8F-9850-3F1842650FA2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/Hexagon/Disassembler/LLVMHexagonDisassembler.vcxproj">
+      <Project>25B39A2F-57D6-44BA-AC3E-15673D7D6A9B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/Hexagon/TargetInfo/LLVMHexagonInfo.vcxproj">
+      <Project>6F427FC5-7536-463C-A706-28238D1C5D57</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Transforms/InstCombine/LLVMInstCombine.vcxproj">
+      <Project>DDD6A4BE-D05A-4E00-9937-ABB9C6C06151</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Transforms/Instrumentation/LLVMInstrumentation.vcxproj">
+      <Project>B3771D38-BC6A-483E-8752-131FA415B9CB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/LTO/LLVMLTO.vcxproj">
+      <Project>5DE2C527-5E3C-4D33-946C-2AD86B4A8BE9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Linker/LLVMLinker.vcxproj">
+      <Project>67C1AC4C-F1F0-468C-9F94-1AEEBFC4AB64</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/MC/LLVMMC.vcxproj">
+      <Project>FB74706C-E63B-4A4A-B915-B8E6C1ACEAF8</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/MC/MCDisassembler/LLVMMCDisassembler.vcxproj">
+      <Project>58928257-C8EA-407A-A6CF-3106BD078BFB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/MC/MCParser/LLVMMCParser.vcxproj">
+      <Project>EEA821D6-D1D8-496D-82FD-D302D69DC72F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/MSP430/InstPrinter/LLVMMSP430AsmPrinter.vcxproj">
+      <Project>0495CA50-2B71-4843-AA91-73A3D8916801</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/MSP430/LLVMMSP430CodeGen.vcxproj">
+      <Project>A672127C-E390-4985-8D8F-6D8B21186B9F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/MSP430/MCTargetDesc/LLVMMSP430Desc.vcxproj">
+      <Project>9A8423E7-DE38-4422-9B4F-299209F14D8B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/MSP430/TargetInfo/LLVMMSP430Info.vcxproj">
+      <Project>20BED4A9-45B4-4765-8FBB-27B367CE6DA5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/Mips/AsmParser/LLVMMipsAsmParser.vcxproj">
+      <Project>4B641E4D-5D5B-47E9-AB1A-16E99BE9ABF6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/Mips/InstPrinter/LLVMMipsAsmPrinter.vcxproj">
+      <Project>86A821B5-5679-4E6B-BCAC-FD2E7778C268</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/Mips/LLVMMipsCodeGen.vcxproj">
+      <Project>5D49CD83-66A9-4610-B5E0-6F0DF05759EE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/Mips/MCTargetDesc/LLVMMipsDesc.vcxproj">
+      <Project>337EA44C-8481-42D9-912B-196009B078DB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/Mips/Disassembler/LLVMMipsDisassembler.vcxproj">
+      <Project>01CFF7BB-ADE1-4592-B87D-4813C4773A32</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/Mips/TargetInfo/LLVMMipsInfo.vcxproj">
+      <Project>C46D033D-4E46-46DD-B5F8-7938438B2F61</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/NVPTX/InstPrinter/LLVMNVPTXAsmPrinter.vcxproj">
+      <Project>BF5DFE8E-ADF3-430C-B6FA-1D604100A33D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/NVPTX/LLVMNVPTXCodeGen.vcxproj">
+      <Project>98AE46D9-367D-4A76-A51E-DD317145014C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/NVPTX/MCTargetDesc/LLVMNVPTXDesc.vcxproj">
+      <Project>C55EB1F4-58E9-4ED9-AA08-D80A7A52C8DE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/NVPTX/TargetInfo/LLVMNVPTXInfo.vcxproj">
+      <Project>A0C2F1B6-3695-4E6D-AE6B-3E7EAC4AFC77</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Transforms/ObjCARC/LLVMObjCARCOpts.vcxproj">
+      <Project>B981202C-DCB7-4899-95B7-8B3E723BE2C2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Object/LLVMObject.vcxproj">
+      <Project>87A358E1-2F7A-445F-A765-65A9C4F8B9A6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/PowerPC/AsmParser/LLVMPowerPCAsmParser.vcxproj">
+      <Project>31DAE113-8D06-452D-A5F9-1BD1687B3B96</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/PowerPC/InstPrinter/LLVMPowerPCAsmPrinter.vcxproj">
+      <Project>5F91F3EC-E686-45B5-AD16-8FCA6143815A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/PowerPC/LLVMPowerPCCodeGen.vcxproj">
+      <Project>AFC994AA-5AB8-4085-ACEF-4ECB2B7F6CD3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/PowerPC/MCTargetDesc/LLVMPowerPCDesc.vcxproj">
+      <Project>E248E275-EEE0-4528-B46E-98A0551C7C83</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/PowerPC/Disassembler/LLVMPowerPCDisassembler.vcxproj">
+      <Project>F8C3050C-CCD5-47C7-BDB5-F463D0A38C3D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/PowerPC/TargetInfo/LLVMPowerPCInfo.vcxproj">
+      <Project>3953C52F-E261-4837-8CB5-D261B9323FBD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/ProfileData/LLVMProfileData.vcxproj">
+      <Project>7393F099-30AB-4EB7-BB9F-413F9B4790D8</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Transforms/Scalar/LLVMScalarOpts.vcxproj">
+      <Project>4FD44A23-F6CF-4155-B68F-B94E69346971</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/CodeGen/SelectionDAG/LLVMSelectionDAG.vcxproj">
+      <Project>6334B2AC-BF91-4CCB-AC5A-28152DD56C6D</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/Sparc/AsmParser/LLVMSparcAsmParser.vcxproj">
+      <Project>B9E8BFD4-D5DB-4550-B2ED-77C484B6E7A8</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/Sparc/InstPrinter/LLVMSparcAsmPrinter.vcxproj">
+      <Project>EEDA1306-3718-4025-9B69-7CE4F26DB493</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/Sparc/LLVMSparcCodeGen.vcxproj">
+      <Project>FAC464C4-5F0F-4616-92B6-B2F0C5627E65</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/Sparc/MCTargetDesc/LLVMSparcDesc.vcxproj">
+      <Project>A987F506-BFAA-4C3F-AE85-33820E2A6E32</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/Sparc/Disassembler/LLVMSparcDisassembler.vcxproj">
+      <Project>330DDDF8-1A0E-45F3-A8DE-1D1845AE00D1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/Sparc/TargetInfo/LLVMSparcInfo.vcxproj">
+      <Project>DB927B71-6E5B-464F-B296-E1FA17661772</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Support/LLVMSupport.vcxproj">
+      <Project>8DB4CD9C-580E-467B-BF58-A270E9427358</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/SystemZ/AsmParser/LLVMSystemZAsmParser.vcxproj">
+      <Project>DC7D899E-ABC2-4189-A1B7-2BBBF3901774</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/SystemZ/InstPrinter/LLVMSystemZAsmPrinter.vcxproj">
+      <Project>AC1D8B8C-0EF9-4BC5-9074-632957318158</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/SystemZ/LLVMSystemZCodeGen.vcxproj">
+      <Project>B7904A7A-C32E-438C-8AC7-1F2839E89B8A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/SystemZ/MCTargetDesc/LLVMSystemZDesc.vcxproj">
+      <Project>AC3B5159-EA4C-47B7-BD81-EC86A0B67CA0</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/SystemZ/Disassembler/LLVMSystemZDisassembler.vcxproj">
+      <Project>0BB7E1D2-9E85-473F-943F-9FC3E959C534</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/SystemZ/TargetInfo/LLVMSystemZInfo.vcxproj">
+      <Project>E6E5C08C-1BB9-41AE-90F8-261E0680BA6F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/LLVMTarget.vcxproj">
+      <Project>D5DF2B1C-245C-4C90-BA03-AE9270092460</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Transforms/Utils/LLVMTransformUtils.vcxproj">
+      <Project>F9EFFE8F-F095-4418-BF98-A67F51FAF718</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Transforms/Vectorize/LLVMVectorize.vcxproj">
+      <Project>6133B0C0-967D-4A54-9230-0A5FFD6BE6F5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/X86/AsmParser/LLVMX86AsmParser.vcxproj">
+      <Project>275FFB9F-53B9-4F1E-96FE-ED2F64E154BA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/X86/InstPrinter/LLVMX86AsmPrinter.vcxproj">
+      <Project>1395D544-A635-4EA2-A9C3-F1CB02112E4C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/X86/LLVMX86CodeGen.vcxproj">
+      <Project>136C51A6-5A0A-491D-9F6E-836B07AB5B6F</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/X86/MCTargetDesc/LLVMX86Desc.vcxproj">
+      <Project>88217033-2D1F-4D29-B451-DEF37DD0C7D4</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/X86/Disassembler/LLVMX86Disassembler.vcxproj">
+      <Project>FAA51DCB-1E7E-45EF-8828-179F8BB29879</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/X86/TargetInfo/LLVMX86Info.vcxproj">
+      <Project>CDCF57CE-5748-4B33-8C90-9D55943051CA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/X86/Utils/LLVMX86Utils.vcxproj">
+      <Project>F585AC78-80D3-460C-9C97-D79937186FD9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/XCore/InstPrinter/LLVMXCoreAsmPrinter.vcxproj">
+      <Project>9EB59070-2653-4020-A0E2-1D358D397444</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/XCore/LLVMXCoreCodeGen.vcxproj">
+      <Project>DF13AE35-5F6F-48C5-B77E-68CE2A1E4767</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/XCore/MCTargetDesc/LLVMXCoreDesc.vcxproj">
+      <Project>4B40ECEE-7743-4AB8-8F81-E143F11D879E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/XCore/Disassembler/LLVMXCoreDisassembler.vcxproj">
+      <Project>8CE27389-35E1-4A78-8669-7CCA0CF8834A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Target/XCore/TargetInfo/LLVMXCoreInfo.vcxproj">
+      <Project>E3500D89-4291-4CDB-A9BE-B63EBEDB053C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Analysis/IPA/LLVMipa.vcxproj">
+      <Project>50109CB8-3330-456A-A000-E1E8D1908120</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/lib/Transforms/IPO/LLVMipo.vcxproj">
+      <Project>562A1EF8-FC74-44CB-8022-F155918D0B0C</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/lto/LTO_exports.vcxproj">
+      <Project>32F8B842-8E33-416E-A669-5EAF9287309E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/ZERO_CHECK.vcxproj">
+      <Project>6F14D479-D3E4-43D2-BD8C-39FC1FC313EA</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

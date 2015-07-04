@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\llvm\lib\Target\Hexagon\CMakeLists.txt" />
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\dce4194e6eb3e1ac928c633fd642aab7\HexagonGenAsmWriter.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\dce4194e6eb3e1ac928c633fd642aab7\HexagonGenAsmWriter.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\dce4194e6eb3e1ac928c633fd642aab7\HexagonGenCallingConv.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\dce4194e6eb3e1ac928c633fd642aab7\HexagonGenCallingConv.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\dce4194e6eb3e1ac928c633fd642aab7\HexagonGenDAGISel.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\dce4194e6eb3e1ac928c633fd642aab7\HexagonGenDAGISel.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\dce4194e6eb3e1ac928c633fd642aab7\HexagonGenDFAPacketizer.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\dce4194e6eb3e1ac928c633fd642aab7\HexagonGenDFAPacketizer.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\dce4194e6eb3e1ac928c633fd642aab7\HexagonGenDisassemblerTables.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\dce4194e6eb3e1ac928c633fd642aab7\HexagonGenDisassemblerTables.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\dce4194e6eb3e1ac928c633fd642aab7\HexagonGenInstrInfo.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\dce4194e6eb3e1ac928c633fd642aab7\HexagonGenInstrInfo.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\dce4194e6eb3e1ac928c633fd642aab7\HexagonGenMCCodeEmitter.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\dce4194e6eb3e1ac928c633fd642aab7\HexagonGenMCCodeEmitter.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\dce4194e6eb3e1ac928c633fd642aab7\HexagonGenRegisterInfo.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\dce4194e6eb3e1ac928c633fd642aab7\HexagonGenRegisterInfo.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\dce4194e6eb3e1ac928c633fd642aab7\HexagonGenSubtargetInfo.inc.tmp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\dce4194e6eb3e1ac928c633fd642aab7\HexagonGenSubtargetInfo.inc.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\c859b39edbf57d34739aff236f17142f\HexagonCommonTableGen.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Work\Public\Reflect\External\build\llvm\lib\Target\Hexagon\CMakeFiles\HexagonCommonTableGen" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{BB23C24B-ABE3-4278-ABE5-C10B4C9A5EFB}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

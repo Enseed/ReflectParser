@@ -1,0 +1,186 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64A57FPLoadBalancing.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64AddressTypePromotion.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64AdvSIMDScalarPass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64AsmPrinter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64BranchRelaxation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64CleanupLocalDynamicTLSPass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64CollectLOH.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64ConditionalCompares.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64DeadRegisterDefinitionsPass.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64ExpandPseudoInsts.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64FastISel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64A53Fix835769.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64FrameLowering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64ConditionOptimizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64ISelDAGToDAG.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64ISelLowering.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64InstrInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64LoadStoreOptimizer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64MCInstLower.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64PromoteConstant.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64PBQPRegAlloc.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64RegisterInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64SelectionDAGInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64StorePairSuppress.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64Subtarget.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64TargetMachine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64TargetObjectFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64TargetTransformInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64CallingConvention.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64InstrAtomics.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64InstrFormats.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64InstrInfo.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64RegisterInfo.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64SchedA53.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64SchedA57.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64SchedA57WriteRes.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64SchedCyclone.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64Schedule.td">
+      <Filter>TableGen descriptions</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64CallingConvention.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64FrameLowering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64InstrInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64ISelLowering.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64MachineCombinerPattern.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64MachineFunctionInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64MCInstLower.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64PBQPRegAlloc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64PerfectShuffle.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64RegisterInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64SelectionDAGInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64Subtarget.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64TargetMachine.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64TargetObjectFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\AArch64TargetTransformInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\llvm\lib\Target\AArch64\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8ABFDC16-7047-4232-9721-4FA6EEF9890C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{8B05A30B-80BD-4D4B-B886-6BBE802A2362}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TableGen descriptions">
+      <UniqueIdentifier>{734EAC7A-53DB-46BE-87CF-615153E949A5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

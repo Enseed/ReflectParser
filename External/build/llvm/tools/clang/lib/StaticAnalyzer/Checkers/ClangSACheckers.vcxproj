@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{16A66966-0268-4819-9490-B236DE300263}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>ClangSACheckers</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Checkers;C:\Work\Public\Reflect\External\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Checkers;C:\Work\Public\Reflect\External\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Checkers;C:\Work\Public\Reflect\External\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Checkers;C:\Work\Public\Reflect\External\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\tools\clang\include;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Checkers\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Work/Public/Reflect/External/llvm/tools/clang/lib/StaticAnalyzer/Checkers/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Work/Public/Reflect/External/llvm -BC:/Work/Public/Reflect/External/build/llvm --check-stamp-file C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Work/Public/Reflect/External/llvm/tools/clang/lib/StaticAnalyzer/Checkers/CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Checkers\CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Checkers\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Work/Public/Reflect/External/llvm/tools/clang/lib/StaticAnalyzer/Checkers/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Work/Public/Reflect/External/llvm -BC:/Work/Public/Reflect/External/build/llvm --check-stamp-file C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Work/Public/Reflect/External/llvm/tools/clang/lib/StaticAnalyzer/Checkers/CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Checkers\CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Checkers\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Work/Public/Reflect/External/llvm/tools/clang/lib/StaticAnalyzer/Checkers/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Work/Public/Reflect/External/llvm -BC:/Work/Public/Reflect/External/build/llvm --check-stamp-file C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Work/Public/Reflect/External/llvm/tools/clang/lib/StaticAnalyzer/Checkers/CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Checkers\CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Checkers\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Work/Public/Reflect/External/llvm/tools/clang/lib/StaticAnalyzer/Checkers/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Work/Public/Reflect/External/llvm -BC:/Work/Public/Reflect/External/build/llvm --check-stamp-file C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Work/Public/Reflect/External/llvm/tools/clang/lib/StaticAnalyzer/Checkers/CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Checkers\CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Checkers\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\056febc4b31291d5ae9d6a93e4b96a76\Checkers.inc.tmp.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Checkers.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+..\..\..\..\..\Debug\bin\clang-tblgen.exe -gen-clang-sa-checkers -I C:/Work/Public/Reflect/External/llvm/tools/clang/lib/StaticAnalyzer/Checkers/../../../include -I C:/Work/Public/Reflect/External/llvm/tools/clang/lib/StaticAnalyzer/Checkers -I C:/Work/Public/Reflect/External/llvm/lib/Target -I C:/Work/Public/Reflect/External/llvm/include C:/Work/Public/Reflect/External/llvm/tools/clang/lib/StaticAnalyzer/Checkers/Checkers.td -o C:/Work/Public/Reflect/External/build/llvm/tools/clang/lib/StaticAnalyzer/Checkers/Checkers.inc.tmp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Work/Public/Reflect/External/build/llvm/CMakeFiles/056febc4b31291d5ae9d6a93e4b96a76/Checkers.inc.tmp.rule;C:\Work\Public\Reflect\External\build\llvm\Debug\bin\clang-tblgen.exe;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Checkers\Checkers.td;C:\Work\Public\Reflect\External\llvm\include\llvm\CodeGen\ValueTypes.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\Intrinsics.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsARM.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsMips.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsX86.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\Work\Public\Reflect\External\llvm\include\llvm\Option\OptParser.td;C:\Work\Public\Reflect\External\llvm\include\llvm\Target\Target.td;C:\Work\Public\Reflect\External\llvm\include\llvm\Target\TargetCallingConv.td;C:\Work\Public\Reflect\External\llvm\include\llvm\Target\TargetItinerary.td;C:\Work\Public\Reflect\External\llvm\include\llvm\Target\TargetSchedule.td;C:\Work\Public\Reflect\External\llvm\include\llvm\Target\TargetSelectionDAG.td;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Checkers\Checkers.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\Checkers.inc.tmp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Checkers.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+..\..\..\..\..\Release\bin\clang-tblgen.exe -gen-clang-sa-checkers -I C:/Work/Public/Reflect/External/llvm/tools/clang/lib/StaticAnalyzer/Checkers/../../../include -I C:/Work/Public/Reflect/External/llvm/tools/clang/lib/StaticAnalyzer/Checkers -I C:/Work/Public/Reflect/External/llvm/lib/Target -I C:/Work/Public/Reflect/External/llvm/include C:/Work/Public/Reflect/External/llvm/tools/clang/lib/StaticAnalyzer/Checkers/Checkers.td -o C:/Work/Public/Reflect/External/build/llvm/tools/clang/lib/StaticAnalyzer/Checkers/Checkers.inc.tmp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Work/Public/Reflect/External/build/llvm/CMakeFiles/056febc4b31291d5ae9d6a93e4b96a76/Checkers.inc.tmp.rule;C:\Work\Public\Reflect\External\build\llvm\Release\bin\clang-tblgen.exe;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Checkers\Checkers.td;C:\Work\Public\Reflect\External\llvm\include\llvm\CodeGen\ValueTypes.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\Intrinsics.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsARM.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsMips.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsX86.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\Work\Public\Reflect\External\llvm\include\llvm\Option\OptParser.td;C:\Work\Public\Reflect\External\llvm\include\llvm\Target\Target.td;C:\Work\Public\Reflect\External\llvm\include\llvm\Target\TargetCallingConv.td;C:\Work\Public\Reflect\External\llvm\include\llvm\Target\TargetItinerary.td;C:\Work\Public\Reflect\External\llvm\include\llvm\Target\TargetSchedule.td;C:\Work\Public\Reflect\External\llvm\include\llvm\Target\TargetSelectionDAG.td;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Checkers\Checkers.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\Checkers.inc.tmp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Checkers.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+..\..\..\..\..\MinSizeRel\bin\clang-tblgen.exe -gen-clang-sa-checkers -I C:/Work/Public/Reflect/External/llvm/tools/clang/lib/StaticAnalyzer/Checkers/../../../include -I C:/Work/Public/Reflect/External/llvm/tools/clang/lib/StaticAnalyzer/Checkers -I C:/Work/Public/Reflect/External/llvm/lib/Target -I C:/Work/Public/Reflect/External/llvm/include C:/Work/Public/Reflect/External/llvm/tools/clang/lib/StaticAnalyzer/Checkers/Checkers.td -o C:/Work/Public/Reflect/External/build/llvm/tools/clang/lib/StaticAnalyzer/Checkers/Checkers.inc.tmp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Work/Public/Reflect/External/build/llvm/CMakeFiles/056febc4b31291d5ae9d6a93e4b96a76/Checkers.inc.tmp.rule;C:\Work\Public\Reflect\External\build\llvm\MinSizeRel\bin\clang-tblgen.exe;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Checkers\Checkers.td;C:\Work\Public\Reflect\External\llvm\include\llvm\CodeGen\ValueTypes.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\Intrinsics.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsARM.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsMips.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsX86.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\Work\Public\Reflect\External\llvm\include\llvm\Option\OptParser.td;C:\Work\Public\Reflect\External\llvm\include\llvm\Target\Target.td;C:\Work\Public\Reflect\External\llvm\include\llvm\Target\TargetCallingConv.td;C:\Work\Public\Reflect\External\llvm\include\llvm\Target\TargetItinerary.td;C:\Work\Public\Reflect\External\llvm\include\llvm\Target\TargetSchedule.td;C:\Work\Public\Reflect\External\llvm\include\llvm\Target\TargetSelectionDAG.td;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Checkers\Checkers.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\Checkers.inc.tmp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Checkers.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+..\..\..\..\..\RelWithDebInfo\bin\clang-tblgen.exe -gen-clang-sa-checkers -I C:/Work/Public/Reflect/External/llvm/tools/clang/lib/StaticAnalyzer/Checkers/../../../include -I C:/Work/Public/Reflect/External/llvm/tools/clang/lib/StaticAnalyzer/Checkers -I C:/Work/Public/Reflect/External/llvm/lib/Target -I C:/Work/Public/Reflect/External/llvm/include C:/Work/Public/Reflect/External/llvm/tools/clang/lib/StaticAnalyzer/Checkers/Checkers.td -o C:/Work/Public/Reflect/External/build/llvm/tools/clang/lib/StaticAnalyzer/Checkers/Checkers.inc.tmp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Work/Public/Reflect/External/build/llvm/CMakeFiles/056febc4b31291d5ae9d6a93e4b96a76/Checkers.inc.tmp.rule;C:\Work\Public\Reflect\External\build\llvm\RelWithDebInfo\bin\clang-tblgen.exe;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Checkers\Checkers.td;C:\Work\Public\Reflect\External\llvm\include\llvm\CodeGen\ValueTypes.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\Intrinsics.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsAArch64.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsAMDGPU.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsARM.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsBPF.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsHexagon.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsMips.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsNVVM.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsPowerPC.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsSystemZ.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsX86.td;C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicsXCore.td;C:\Work\Public\Reflect\External\llvm\include\llvm\Option\OptParser.td;C:\Work\Public\Reflect\External\llvm\include\llvm\Target\Target.td;C:\Work\Public\Reflect\External\llvm\include\llvm\Target\TargetCallingConv.td;C:\Work\Public\Reflect\External\llvm\include\llvm\Target\TargetItinerary.td;C:\Work\Public\Reflect\External\llvm\include\llvm\Target\TargetSchedule.td;C:\Work\Public\Reflect\External\llvm\include\llvm\Target\TargetSelectionDAG.td;C:\Work\Public\Reflect\External\llvm\tools\clang\lib\StaticAnalyzer\Checkers\Checkers.td;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\Checkers.inc.tmp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\056febc4b31291d5ae9d6a93e4b96a76\Checkers.inc.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Updating Checkers.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Work/Public/Reflect/External/build/llvm/tools/clang/lib/StaticAnalyzer/Checkers/Checkers.inc.tmp C:/Work/Public/Reflect/External/build/llvm/tools/clang/lib/StaticAnalyzer/Checkers/Checkers.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Work/Public/Reflect/External/build/llvm/CMakeFiles/056febc4b31291d5ae9d6a93e4b96a76/Checkers.inc.rule;C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\Checkers.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\Checkers.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Updating Checkers.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Work/Public/Reflect/External/build/llvm/tools/clang/lib/StaticAnalyzer/Checkers/Checkers.inc.tmp C:/Work/Public/Reflect/External/build/llvm/tools/clang/lib/StaticAnalyzer/Checkers/Checkers.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Work/Public/Reflect/External/build/llvm/CMakeFiles/056febc4b31291d5ae9d6a93e4b96a76/Checkers.inc.rule;C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\Checkers.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\Checkers.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Updating Checkers.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Work/Public/Reflect/External/build/llvm/tools/clang/lib/StaticAnalyzer/Checkers/Checkers.inc.tmp C:/Work/Public/Reflect/External/build/llvm/tools/clang/lib/StaticAnalyzer/Checkers/Checkers.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Work/Public/Reflect/External/build/llvm/CMakeFiles/056febc4b31291d5ae9d6a93e4b96a76/Checkers.inc.rule;C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\Checkers.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\Checkers.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Updating Checkers.inc...</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -E copy_if_different C:/Work/Public/Reflect/External/build/llvm/tools/clang/lib/StaticAnalyzer/Checkers/Checkers.inc.tmp C:/Work/Public/Reflect/External/build/llvm/tools/clang/lib/StaticAnalyzer/Checkers/Checkers.inc
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Work/Public/Reflect/External/build/llvm/CMakeFiles/056febc4b31291d5ae9d6a93e4b96a76/Checkers.inc.rule;C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\Checkers.inc.tmp;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\Checkers.inc</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\build\llvm\CMakeFiles\86d7650c03f69c0a5dc80a235f87062f\ClangSACheckers.rule">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Work/Public/Reflect/External/build/llvm/CMakeFiles/86d7650c03f69c0a5dc80a235f87062f/ClangSACheckers.rule;C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\Checkers.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\CMakeFiles\ClangSACheckers</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Work/Public/Reflect/External/build/llvm/CMakeFiles/86d7650c03f69c0a5dc80a235f87062f/ClangSACheckers.rule;C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\Checkers.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\CMakeFiles\ClangSACheckers</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Work/Public/Reflect/External/build/llvm/CMakeFiles/86d7650c03f69c0a5dc80a235f87062f/ClangSACheckers.rule;C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\Checkers.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\CMakeFiles\ClangSACheckers</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'"></Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Work/Public/Reflect/External/build/llvm/CMakeFiles/86d7650c03f69c0a5dc80a235f87062f/ClangSACheckers.rule;C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\Checkers.inc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\CMakeFiles\ClangSACheckers</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="C:\Work\Public\Reflect\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\CMakeFiles\ClangSACheckers" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangARMNeon.vcxproj">
+      <Project>85ABBBE0-32D6-4619-9E36-15E399F157D2</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/AST/ClangAttrClasses.vcxproj">
+      <Project>10F22EA0-D495-41F4-942E-9DD0CE4E3603</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/AST/ClangAttrDump.vcxproj">
+      <Project>7F63B8F0-615A-44D0-9CF1-96D55EA2F036</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangAttrHasAttributeImpl.vcxproj">
+      <Project>131E704E-856C-43AD-8410-D910CCD237DE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/AST/ClangAttrImpl.vcxproj">
+      <Project>676B7892-1366-4B89-87E6-4EF9DEC7D260</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangAttrList.vcxproj">
+      <Project>68019632-C77F-4E4F-9A19-0488656BF748</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Serialization/ClangAttrPCHRead.vcxproj">
+      <Project>78DB6005-9E8D-42F2-9FBD-2B15BBBA5E06</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Serialization/ClangAttrPCHWrite.vcxproj">
+      <Project>F39EB5B1-D6C9-416E-BFAB-0E151479A6EB</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Sema/ClangAttrParsedAttrImpl.vcxproj">
+      <Project>DB8AA310-0FB1-4568-A18F-BD9D647EBB1E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Sema/ClangAttrParsedAttrKinds.vcxproj">
+      <Project>74461032-9506-44F1-BA24-5655A97C8B21</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Sema/ClangAttrParsedAttrList.vcxproj">
+      <Project>664BC555-9A81-49C6-8E32-7AF546AAA915</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Parse/ClangAttrParserStringSwitches.vcxproj">
+      <Project>4B6D8CCD-92FF-4CEA-89BA-EC3224A59980</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Sema/ClangAttrSpellingListIndex.vcxproj">
+      <Project>C538D660-6774-452D-9A9B-482B345FBDA6</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Sema/ClangAttrTemplateInstantiate.vcxproj">
+      <Project>0ACF4055-47D0-45C4-866D-95F6AB95A787</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/AST/ClangAttrVisitor.vcxproj">
+      <Project>7DD3BD18-2DE2-4622-8E31-7D4566AD58E5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/AST/ClangCommentCommandInfo.vcxproj">
+      <Project>A8C82E6E-9B29-4CDB-9488-5645CFF740A3</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/AST/ClangCommentCommandList.vcxproj">
+      <Project>40C01AA5-E5A3-4CCB-92B0-B146736CFF15</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/AST/ClangCommentHTMLNamedCharacterReferences.vcxproj">
+      <Project>33543FAA-12DF-49B8-8EB1-D86E92FA27E4</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/AST/ClangCommentHTMLTags.vcxproj">
+      <Project>252FDC7D-DCF8-4C88-8FBE-F9F346781E9A</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/AST/ClangCommentHTMLTagsProperties.vcxproj">
+      <Project>D6B80A4B-D162-44D8-A984-A3FA0C3C3E63</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/AST/ClangCommentNodes.vcxproj">
+      <Project>BB2B0FFE-AF73-469B-9CAE-0A2C28DC8F30</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/AST/ClangDeclNodes.vcxproj">
+      <Project>2DE95B7F-37AB-4AE3-A0F6-8CE4DFDCDEAE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangDiagnosticAST.vcxproj">
+      <Project>EB998994-FB2A-4803-8439-0C288A188D50</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangDiagnosticAnalysis.vcxproj">
+      <Project>09A6F434-6CA6-4C68-9E9B-313A7A37B1F1</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangDiagnosticComment.vcxproj">
+      <Project>51A7E0BD-6A7C-4E36-A552-ABBA90BF4B44</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangDiagnosticCommon.vcxproj">
+      <Project>748C1F19-A39B-4BC6-8F33-A64A3CB163A5</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangDiagnosticDriver.vcxproj">
+      <Project>8E36B3BD-596C-489F-A538-CC2E530D75BD</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangDiagnosticFrontend.vcxproj">
+      <Project>8890E5D9-CB43-4BA2-9764-8B0DA30AA7AE</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangDiagnosticGroups.vcxproj">
+      <Project>81EE5017-1757-48FC-AB6B-B9E73501EC36</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangDiagnosticIndexName.vcxproj">
+      <Project>F70B09FE-613F-4FB4-8DDB-08ACFF92FB1B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangDiagnosticLex.vcxproj">
+      <Project>8E1C8640-7E9F-4FDE-9BE8-DF139167CC17</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangDiagnosticParse.vcxproj">
+      <Project>72E5F42A-96DB-44C9-B0E7-57ADC2088DF9</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangDiagnosticSema.vcxproj">
+      <Project>DED3EE8E-90F7-42EE-AA4A-B47541BCB607</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/Basic/ClangDiagnosticSerialization.vcxproj">
+      <Project>AB9B1037-C735-4392-8676-0422B8CCD44B</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/include/clang/AST/ClangStmtNodes.vcxproj">
+      <Project>682F2A47-E740-4412-985C-5C89D675D68E</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/ZERO_CHECK.vcxproj">
+      <Project>6F14D479-D3E4-43D2-BD8C-39FC1FC313EA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/tools/clang/utils/TableGen/clang-tblgen.vcxproj">
+      <Project>1B5972B7-15F2-4328-9F56-D823A0529515</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

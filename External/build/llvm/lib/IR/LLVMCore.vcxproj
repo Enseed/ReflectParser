@@ -1,0 +1,408 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{A8041917-0908-46CF-B053-D40B8C574252}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>LLVMCore</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Work\Public\Reflect\External\build\llvm\Debug\lib\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LLVMCore.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LLVMCore</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Work\Public\Reflect\External\build\llvm\Release\lib\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LLVMCore.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LLVMCore</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Work\Public\Reflect\External\build\llvm\MinSizeRel\lib\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">LLVMCore.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">LLVMCore</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Work\Public\Reflect\External\build\llvm\RelWithDebInfo\lib\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">LLVMCore.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">LLVMCore</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -w14062 /EHs-c- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\IR;C:\Work\Public\Reflect\External\llvm\lib\IR;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\IR;C:\Work\Public\Reflect\External\llvm\lib\IR;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\IR;C:\Work\Public\Reflect\External\llvm\lib\IR;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -w14062 /EHs-c- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\IR;C:\Work\Public\Reflect\External\llvm\lib\IR;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\IR;C:\Work\Public\Reflect\External\llvm\lib\IR;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\IR;C:\Work\Public\Reflect\External\llvm\lib\IR;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -w14062 /EHs-c- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\IR;C:\Work\Public\Reflect\External\llvm\lib\IR;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\IR;C:\Work\Public\Reflect\External\llvm\lib\IR;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\IR;C:\Work\Public\Reflect\External\llvm\lib\IR;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -w14062 /EHs-c- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\IR;C:\Work\Public\Reflect\External\llvm\lib\IR;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\IR;C:\Work\Public\Reflect\External\llvm\lib\IR;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\IR;C:\Work\Public\Reflect\External\llvm\lib\IR;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\llvm\lib\IR\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Work/Public/Reflect/External/llvm/lib/IR/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Work/Public/Reflect/External/llvm -BC:/Work/Public/Reflect/External/build/llvm --check-stamp-file C:\Work\Public\Reflect\External\build\llvm\lib\IR\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Work/Public/Reflect/External/llvm/lib/IR/CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\lib\IR\CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\lib\IR\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Work\Public\Reflect\External\build\llvm\lib\IR\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Work/Public/Reflect/External/llvm/lib/IR/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Work/Public/Reflect/External/llvm -BC:/Work/Public/Reflect/External/build/llvm --check-stamp-file C:\Work\Public\Reflect\External\build\llvm\lib\IR\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Work/Public/Reflect/External/llvm/lib/IR/CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\lib\IR\CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\lib\IR\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Work\Public\Reflect\External\build\llvm\lib\IR\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Work/Public/Reflect/External/llvm/lib/IR/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Work/Public/Reflect/External/llvm -BC:/Work/Public/Reflect/External/build/llvm --check-stamp-file C:\Work\Public\Reflect\External\build\llvm\lib\IR\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Work/Public/Reflect/External/llvm/lib/IR/CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\lib\IR\CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\lib\IR\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Work\Public\Reflect\External\build\llvm\lib\IR\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Work/Public/Reflect/External/llvm/lib/IR/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Work/Public/Reflect/External/llvm -BC:/Work/Public/Reflect/External/build/llvm --check-stamp-file C:\Work\Public\Reflect\External\build\llvm\lib\IR\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Work/Public/Reflect/External/llvm/lib/IR/CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\lib\IR\CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\lib\IR\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Work\Public\Reflect\External\build\llvm\lib\IR\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\IR\AttributeImpl.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\IR\ConstantFold.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\IR\ConstantsContext.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\IR\LLVMContextImpl.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\IR\MetadataImpl.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\lib\IR\SymbolTableListTraitsImpl.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\Argument.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\AssemblyAnnotationWriter.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\Attributes.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\AutoUpgrade.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\BasicBlock.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\CallingConv.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\CallSite.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\CFG.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\Comdat.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\Constant.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\ConstantFolder.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\ConstantRange.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\Constants.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\DataLayout.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\DebugInfo.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\DebugInfoMetadata.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\DebugLoc.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\DerivedTypes.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\DiagnosticInfo.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\DiagnosticPrinter.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\DIBuilder.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\Dominators.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\Function.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\GetElementPtrTypeIterator.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\GlobalAlias.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\GlobalObject.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\GlobalValue.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\GlobalVariable.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\GVMaterializer.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\InlineAsm.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\InstIterator.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\InstrTypes.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\Instruction.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\Instructions.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\InstVisitor.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IntrinsicInst.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\Intrinsics.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IRBuilder.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\IRPrintingPasses.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\LegacyPassManager.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\LegacyPassManagers.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\LegacyPassNameParser.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\LLVMContext.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\Mangler.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\MDBuilder.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\Metadata.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\MetadataTracking.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\Module.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\ModuleSlotTracker.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\NoFolder.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\OperandTraits.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\Operator.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\PassManager.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\PassManagerInternal.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\PatternMatch.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\PredIteratorCache.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\Statepoint.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\SymbolTableListTraits.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\TrackingMDRef.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\Type.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\TypeBuilder.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\TypeFinder.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\Use.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\UseListOrder.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\User.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\Value.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\ValueHandle.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\ValueMap.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\ValueSymbolTable.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\IR\Verifier.h" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\AsmWriter.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\Attributes.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\AutoUpgrade.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\BasicBlock.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\Comdat.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\ConstantFold.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\ConstantRange.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\Constants.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\Core.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\DIBuilder.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\DataLayout.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\DebugInfo.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\DebugInfoMetadata.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\DebugLoc.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\DiagnosticInfo.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\DiagnosticPrinter.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\Dominators.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\Function.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\GCOV.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\GVMaterializer.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\Globals.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\IRBuilder.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\IRPrintingPasses.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\InlineAsm.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\Instruction.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\Instructions.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\IntrinsicInst.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\LLVMContext.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\LLVMContextImpl.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\LegacyPassManager.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\MDBuilder.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\Mangler.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\Metadata.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\MetadataTracking.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\Module.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\Operator.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\Pass.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\PassManager.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\PassRegistry.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\Statepoint.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\Type.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\TypeFinder.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\Use.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\User.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\Value.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\ValueSymbolTable.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\ValueTypes.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\IR\Verifier.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/ZERO_CHECK.vcxproj">
+      <Project>6F14D479-D3E4-43D2-BD8C-39FC1FC313EA</Project>
+    </ProjectReference>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/include/llvm/IR/intrinsics_gen.vcxproj">
+      <Project>6A75B24E-95F5-4D0F-8F30-65927B69720B</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

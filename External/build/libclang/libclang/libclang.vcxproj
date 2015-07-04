@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{45B5C3C2-0583-4D1B-BAB7-8B082389A5F7}</ProjectGuid>
+    <RootNamespace>libclang</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <ProjectReference />
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\llvm\tools\clang\lib\Analysis\clangAnalysis.vcxproj">
+      <Project>{ab424f77-2add-445e-936d-592bbed471ce}</Project>
+      <Private>false</Private>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+      <CopyLocalSatelliteAssemblies>false</CopyLocalSatelliteAssemblies>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+      <UseLibraryDependencyInputs>false</UseLibraryDependencyInputs>
+    </ProjectReference>
+    <ProjectReference Include="..\..\llvm\tools\clang\lib\ARCMigrate\clangARCMigrate.vcxproj">
+      <Project>{39363f44-9a4b-490f-8c29-207540fe76c0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\llvm\tools\clang\lib\ASTMatchers\clangASTMatchers.vcxproj">
+      <Project>{12be09b8-f2fe-49ba-95bd-798a3e5746d2}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\llvm\tools\clang\lib\ASTMatchers\Dynamic\clangDynamicASTMatchers.vcxproj">
+      <Project>{0eaba252-e2cd-430f-aed9-ef33c6e42967}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\llvm\tools\clang\lib\AST\clangAST.vcxproj">
+      <Project>{7aa0d9b9-427d-4c98-9541-9771c662fa05}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\llvm\tools\clang\lib\Basic\clangBasic.vcxproj">
+      <Project>{d362cff1-fbe5-4991-b47f-398272ad584d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\llvm\tools\clang\lib\CodeGen\clangCodeGen.vcxproj">
+      <Project>{acefed5e-c195-4231-80e1-9ba4189601a0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\llvm\tools\clang\lib\Driver\clangDriver.vcxproj">
+      <Project>{50a2a19d-1c55-4a09-bfe7-686cbf6e2e38}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\llvm\tools\clang\lib\Edit\clangEdit.vcxproj">
+      <Project>{0802ea20-3be5-4651-b843-4807be552aa1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\llvm\tools\clang\lib\Format\clangFormat.vcxproj">
+      <Project>{f3c8866f-7562-4782-bedb-0e4e7fdd6abe}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\llvm\tools\clang\lib\FrontendTool\clangFrontendTool.vcxproj">
+      <Project>{c9b0d0eb-4bb1-490f-81e2-253a02e76ee1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\llvm\tools\clang\lib\Frontend\clangFrontend.vcxproj">
+      <Project>{aef9c6ac-fa4d-40fe-beda-abc3d9b86982}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\llvm\tools\clang\lib\Frontend\Rewrite\clangRewriteFrontend.vcxproj">
+      <Project>{ab29bc3b-9b96-4ef6-9ee4-d09e1362d8ce}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\llvm\tools\clang\lib\Index\clangIndex.vcxproj">
+      <Project>{ba84bdf4-c993-454c-ae54-5ab0a2337e8f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\llvm\tools\clang\lib\Lex\clangLex.vcxproj">
+      <Project>{ae08d93f-05cf-48a0-98d9-28f08941bd03}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\llvm\tools\clang\lib\Parse\clangParse.vcxproj">
+      <Project>{c835698f-40da-4c5a-95af-d07798ab089c}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\llvm\tools\clang\lib\Rewrite\clangRewrite.vcxproj">
+      <Project>{968c443e-8dbf-4fdb-99f4-af7e225845a9}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\llvm\tools\clang\lib\Sema\clangSema.vcxproj">
+      <Project>{ef328218-fb5b-46c9-8a93-7d45834bb4e6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\llvm\tools\clang\lib\Serialization\clangSerialization.vcxproj">
+      <Project>{1dc520df-7625-4d63-b271-f63e591e4490}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\llvm\tools\clang\lib\StaticAnalyzer\Checkers\clangStaticAnalyzerCheckers.vcxproj">
+      <Project>{a0145e3d-5ae0-47ca-b21d-2a43fa8e67f6}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\llvm\tools\clang\lib\StaticAnalyzer\Core\clangStaticAnalyzerCore.vcxproj">
+      <Project>{dca4d286-caf0-472d-a4f7-46a56efe62ce}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\llvm\tools\clang\lib\StaticAnalyzer\Frontend\clangStaticAnalyzerFrontend.vcxproj">
+      <Project>{19a43d3c-c419-45f2-a321-50d4d1577b90}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\llvm\tools\clang\lib\Tooling\clangTooling.vcxproj">
+      <Project>{52e2399e-8c59-455e-b243-4b39cf95b231}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\..\llvm\tools\clang\lib\Tooling\Core\clangToolingCore.vcxproj">
+      <Project>{9763b5d5-4fb1-4f5c-a138-28c03855e981}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

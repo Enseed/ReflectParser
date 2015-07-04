@@ -27,5 +27,7 @@
 *.out
 *.app
 *.sdf
-*/Debug/
-*/ipch/
+**/ipch/
+**/Debug/
+**/Release/
+*.opensdf

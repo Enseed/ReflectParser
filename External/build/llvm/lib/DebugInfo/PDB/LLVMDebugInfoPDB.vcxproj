@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGUID>{C0C61AA8-505B-4A96-B376-D8DD726185E1}</ProjectGUID>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>LLVMDebugInfoPDB</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v120</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+    <PropertyGroup>
+      <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Work\Public\Reflect\External\build\llvm\Debug\lib\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LLVMDebugInfoPDB.dir\Debug\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">LLVMDebugInfoPDB</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Work\Public\Reflect\External\build\llvm\Release\lib\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LLVMDebugInfoPDB.dir\Release\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">LLVMDebugInfoPDB</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Work\Public\Reflect\External\build\llvm\MinSizeRel\lib\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">LLVMDebugInfoPDB.dir\MinSizeRel\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">LLVMDebugInfoPDB</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+      <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Work\Public\Reflect\External\build\llvm\RelWithDebInfo\lib\</OutDir>
+      <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">LLVMDebugInfoPDB.dir\RelWithDebInfo\</IntDir>
+      <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">LLVMDebugInfoPDB</TargetName>
+      <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+    </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -w14062 /EHs-c- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\DebugInfo\PDB;C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\DebugInfo\PDB;C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\DebugInfo\PDB;C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -w14062 /EHs-c- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\DebugInfo\PDB;C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\DebugInfo\PDB;C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\DebugInfo\PDB;C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -w14062 /EHs-c- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\DebugInfo\PDB;C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat></DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\DebugInfo\PDB;C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\DebugInfo\PDB;C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalOptions> -w14062 /EHs-c- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\DebugInfo\PDB;C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4146;4180;4244;4258;4267;4291;4345;4351;4355;4456;4457;4458;4459;4503;4624;4722;4800;4100;4127;4512;4505;4610;4510;4702;4245;4706;4310;4701;4703;4389;4611;4805;4204;4324</DisableSpecificWarnings>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <TreatSpecificWarningsAsErrors>4238</TreatSpecificWarningsAsErrors>
+      <WarningLevel>Level4</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_HAS_EXCEPTIONS=0;GTEST_HAS_RTTI=0;_CRT_SECURE_NO_DEPRECATE;_CRT_SECURE_NO_WARNINGS;_CRT_NONSTDC_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;_SCL_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_WARNINGS;__STDC_CONSTANT_MACROS;__STDC_FORMAT_MACROS;__STDC_LIMIT_MACROS;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\DebugInfo\PDB;C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Work\Public\Reflect\External\build\llvm\lib\DebugInfo\PDB;C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB;C:\Work\Public\Reflect\External\build\llvm\include;C:\Work\Public\Reflect\External\llvm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/Work/Public/Reflect/External/llvm/lib/DebugInfo/PDB/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Work/Public/Reflect/External/llvm -BC:/Work/Public/Reflect/External/build/llvm --check-stamp-file C:\Work\Public\Reflect\External\build\llvm\lib\DebugInfo\PDB\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/Work/Public/Reflect/External/llvm/lib/DebugInfo/PDB/CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Work\Public\Reflect\External\build\llvm\lib\DebugInfo\PDB\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/Work/Public/Reflect/External/llvm/lib/DebugInfo/PDB/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Work/Public/Reflect/External/llvm -BC:/Work/Public/Reflect/External/build/llvm --check-stamp-file C:\Work\Public\Reflect\External\build\llvm\lib\DebugInfo\PDB\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/Work/Public/Reflect/External/llvm/lib/DebugInfo/PDB/CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Work\Public\Reflect\External\build\llvm\lib\DebugInfo\PDB\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/Work/Public/Reflect/External/llvm/lib/DebugInfo/PDB/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Work/Public/Reflect/External/llvm -BC:/Work/Public/Reflect/External/build/llvm --check-stamp-file C:\Work\Public\Reflect\External\build\llvm\lib\DebugInfo\PDB\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/Work/Public/Reflect/External/llvm/lib/DebugInfo/PDB/CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\Work\Public\Reflect\External\build\llvm\lib\DebugInfo\PDB\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/Work/Public/Reflect/External/llvm/lib/DebugInfo/PDB/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+"c:\Program Files (x86)\CMake\bin\cmake.exe" -HC:/Work/Public/Reflect/External/llvm -BC:/Work/Public/Reflect/External/build/llvm --check-stamp-file C:\Work\Public\Reflect\External\build\llvm\lib\DebugInfo\PDB\CMakeFiles\generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/Work/Public/Reflect/External/llvm/lib/DebugInfo/PDB/CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\CMakeLists.txt;C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\Work\Public\Reflect\External\build\llvm\lib\DebugInfo\PDB\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\ConcreteSymbolEnumerator.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\IPDBDataStream.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\IPDBEnumChildren.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\IPDBLineNumber.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\IPDBRawSymbol.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\IPDBSession.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\IPDBSourceFile.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDB.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBContext.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBExtras.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbol.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolAnnotation.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolBlock.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolCompiland.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolCompilandDetails.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolCompilandEnv.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolCustom.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolData.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolExe.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolFunc.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolFuncDebugEnd.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolFuncDebugStart.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolLabel.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolPublicSymbol.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolThunk.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeArray.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeBaseClass.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeBuiltin.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeCustom.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeDimension.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeEnum.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeFriend.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeFunctionArg.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeFunctionSig.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeManaged.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypePointer.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeTypedef.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeUDT.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeVTable.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolTypeVTableShape.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolUnknown.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymbolUsingNamespace.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBSymDumper.h" />
+    <ClInclude Include="C:\Work\Public\Reflect\External\llvm\include\llvm\DebugInfo\PDB\PDBTypes.h" />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\IPDBSourceFile.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDB.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBContext.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBExtras.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBInterfaceAnchors.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbol.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolAnnotation.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolBlock.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolCompiland.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolCompilandDetails.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolCompilandEnv.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolCustom.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolData.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolExe.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolFunc.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolFuncDebugEnd.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolFuncDebugStart.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolLabel.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolPublicSymbol.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolThunk.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolTypeArray.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolTypeBaseClass.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolTypeBuiltin.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolTypeCustom.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolTypeDimension.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolTypeEnum.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolTypeFriend.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolTypeFunctionArg.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolTypeFunctionSig.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolTypeManaged.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolTypePointer.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolTypeTypedef.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolTypeUDT.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolTypeVTable.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolTypeVTableShape.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolUnknown.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymbolUsingNamespace.cpp"  />
+    <ClCompile Include="C:\Work\Public\Reflect\External\llvm\lib\DebugInfo\PDB\PDBSymDumper.cpp"  />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:/Work/Public/Reflect/External/build/llvm/ZERO_CHECK.vcxproj">
+      <Project>6F14D479-D3E4-43D2-BD8C-39FC1FC313EA</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

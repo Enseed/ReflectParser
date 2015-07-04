@@ -1,0 +1,13 @@
+# CMake generation dependency list for this directory.
+C:/Work/Public/Reflect/External/llvm/tools/clang/CMakeLists.txt
+c:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindLibXml2.cmake
+c:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPkgConfig.cmake
+c:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake
+c:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageMessage.cmake
+c:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeParseArguments.cmake
+c:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageHandleStandardArgs.cmake
+c:/Program Files (x86)/CMake/share/cmake-3.2/Modules/FindPackageMessage.cmake
+c:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeParseArguments.cmake
+C:/Work/Public/Reflect/External/llvm/tools/clang/include/clang/Basic/Version.inc.in
+C:/Work/Public/Reflect/External/llvm/tools/clang/include/clang/Config/config.h.cmake
+c:/Program Files (x86)/CMake/share/cmake-3.2/Modules/CMakeParseArguments.cmake

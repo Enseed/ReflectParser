@@ -1,0 +1,4 @@
+# CMake generation dependency list for this directory.
+C:/Work/Public/Reflect/External/llvm/test/CMakeLists.txt
+C:/Work/Public/Reflect/External/llvm/test/lit.site.cfg.in
+C:/Work/Public/Reflect/External/llvm/test/Unit/lit.site.cfg.in
