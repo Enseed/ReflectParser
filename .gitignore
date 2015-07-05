@@ -31,3 +31,4 @@
 **/Debug/
 **/Release/
 *.opensdf
+libs/build-clang/generated/

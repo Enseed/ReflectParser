@@ -5,74 +5,74 @@ VisualStudioVersion = 14.0.22823.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reflect", "Reflect.vcxproj", "{A101D68A-FD68-44CC-9214-B57085BFAD74}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangTooling", "..\External\build\llvm\tools\clang\lib\Tooling\clangTooling.vcxproj", "{52E2399E-8C59-455E-B243-4B39CF95B231}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangTooling", "..\libs\build-clang\generated\tools\clang\lib\Tooling\clangTooling.vcxproj", "{52E2399E-8C59-455E-B243-4B39CF95B231}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "clang Libraries", "clang Libraries", "{277C86A1-A062-4415-A529-A24C310C082E}"
 	ProjectSection(SolutionItems) = preProject
-		..\External\build\llvm\tools\clang\tools\libclang\libclang.vcxproj = ..\External\build\llvm\tools\clang\tools\libclang\libclang.vcxproj
+		..\libs\build-clang\generated\tools\clang\tools\libclang\libclang.vcxproj = ..\libs\build-clang\generated\tools\clang\tools\libclang\libclang.vcxproj
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangAST", "..\External\build\llvm\tools\clang\lib\AST\clangAST.vcxproj", "{7AA0D9B9-427D-4C98-9541-9771C662FA05}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangAST", "..\libs\build-clang\generated\tools\clang\lib\AST\clangAST.vcxproj", "{7AA0D9B9-427D-4C98-9541-9771C662FA05}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LLVM Libraries", "LLVM Libraries", "{E173C414-EDFE-4F84-B1E7-9D6334D4FF9A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LLVMSupport", "..\External\build\llvm\lib\Support\LLVMSupport.vcxproj", "{8DB4CD9C-580E-467B-BF58-A270E9427358}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LLVMSupport", "..\libs\build-clang\generated\lib\Support\LLVMSupport.vcxproj", "{8DB4CD9C-580E-467B-BF58-A270E9427358}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangBasic", "..\External\build\llvm\tools\clang\lib\Basic\clangBasic.vcxproj", "{D362CFF1-FBE5-4991-B47F-398272AD584D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangBasic", "..\libs\build-clang\generated\tools\clang\lib\Basic\clangBasic.vcxproj", "{D362CFF1-FBE5-4991-B47F-398272AD584D}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangFrontend", "..\External\build\llvm\tools\clang\lib\Frontend\clangFrontend.vcxproj", "{AEF9C6AC-FA4D-40FE-BEDA-ABC3D9B86982}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangFrontend", "..\libs\build-clang\generated\tools\clang\lib\Frontend\clangFrontend.vcxproj", "{AEF9C6AC-FA4D-40FE-BEDA-ABC3D9B86982}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangLex", "..\External\build\llvm\tools\clang\lib\Lex\clangLex.vcxproj", "{AE08D93F-05CF-48A0-98D9-28F08941BD03}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangLex", "..\libs\build-clang\generated\tools\clang\lib\Lex\clangLex.vcxproj", "{AE08D93F-05CF-48A0-98D9-28F08941BD03}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libclang", "..\External\build\libclang\libclang\libclang.vcxproj", "{45B5C3C2-0583-4D1B-BAB7-8B082389A5F7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libclang", "..\libs\build-clang\libclang.vcxproj", "{45B5C3C2-0583-4D1B-BAB7-8B082389A5F7}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangAnalysis", "..\External\build\llvm\tools\clang\lib\Analysis\clangAnalysis.vcxproj", "{AB424F77-2ADD-445E-936D-592BBED471CE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangAnalysis", "..\libs\build-clang\generated\tools\clang\lib\Analysis\clangAnalysis.vcxproj", "{AB424F77-2ADD-445E-936D-592BBED471CE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangARCMigrate", "..\External\build\llvm\tools\clang\lib\ARCMigrate\clangARCMigrate.vcxproj", "{39363F44-9A4B-490F-8C29-207540FE76C0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangARCMigrate", "..\libs\build-clang\generated\tools\clang\lib\ARCMigrate\clangARCMigrate.vcxproj", "{39363F44-9A4B-490F-8C29-207540FE76C0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangASTMatchers", "..\External\build\llvm\tools\clang\lib\ASTMatchers\clangASTMatchers.vcxproj", "{12BE09B8-F2FE-49BA-95BD-798A3E5746D2}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangASTMatchers", "..\libs\build-clang\generated\tools\clang\lib\ASTMatchers\clangASTMatchers.vcxproj", "{12BE09B8-F2FE-49BA-95BD-798A3E5746D2}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangCodeGen", "..\External\build\llvm\tools\clang\lib\CodeGen\clangCodeGen.vcxproj", "{ACEFED5E-C195-4231-80E1-9BA4189601A0}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangCodeGen", "..\libs\build-clang\generated\tools\clang\lib\CodeGen\clangCodeGen.vcxproj", "{ACEFED5E-C195-4231-80E1-9BA4189601A0}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangDriver", "..\External\build\llvm\tools\clang\lib\Driver\clangDriver.vcxproj", "{50A2A19D-1C55-4A09-BFE7-686CBF6E2E38}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangDriver", "..\libs\build-clang\generated\tools\clang\lib\Driver\clangDriver.vcxproj", "{50A2A19D-1C55-4A09-BFE7-686CBF6E2E38}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangDynamicASTMatchers", "..\External\build\llvm\tools\clang\lib\ASTMatchers\Dynamic\clangDynamicASTMatchers.vcxproj", "{0EABA252-E2CD-430F-AED9-EF33C6E42967}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangDynamicASTMatchers", "..\libs\build-clang\generated\tools\clang\lib\ASTMatchers\Dynamic\clangDynamicASTMatchers.vcxproj", "{0EABA252-E2CD-430F-AED9-EF33C6E42967}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangEdit", "..\External\build\llvm\tools\clang\lib\Edit\clangEdit.vcxproj", "{0802EA20-3BE5-4651-B843-4807BE552AA1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangEdit", "..\libs\build-clang\generated\tools\clang\lib\Edit\clangEdit.vcxproj", "{0802EA20-3BE5-4651-B843-4807BE552AA1}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangFormat", "..\External\build\llvm\tools\clang\lib\Format\clangFormat.vcxproj", "{F3C8866F-7562-4782-BEDB-0E4E7FDD6ABE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangFormat", "..\libs\build-clang\generated\tools\clang\lib\Format\clangFormat.vcxproj", "{F3C8866F-7562-4782-BEDB-0E4E7FDD6ABE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangFrontendTool", "..\External\build\llvm\tools\clang\lib\FrontendTool\clangFrontendTool.vcxproj", "{C9B0D0EB-4BB1-490F-81E2-253A02E76EE1}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangFrontendTool", "..\libs\build-clang\generated\tools\clang\lib\FrontendTool\clangFrontendTool.vcxproj", "{C9B0D0EB-4BB1-490F-81E2-253A02E76EE1}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangIndex", "..\External\build\llvm\tools\clang\lib\Index\clangIndex.vcxproj", "{BA84BDF4-C993-454C-AE54-5AB0A2337E8F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangIndex", "..\libs\build-clang\generated\tools\clang\lib\Index\clangIndex.vcxproj", "{BA84BDF4-C993-454C-AE54-5AB0A2337E8F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangParse", "..\External\build\llvm\tools\clang\lib\Parse\clangParse.vcxproj", "{C835698F-40DA-4C5A-95AF-D07798AB089C}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangParse", "..\libs\build-clang\generated\tools\clang\lib\Parse\clangParse.vcxproj", "{C835698F-40DA-4C5A-95AF-D07798AB089C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangRewrite", "..\External\build\llvm\tools\clang\lib\Rewrite\clangRewrite.vcxproj", "{968C443E-8DBF-4FDB-99F4-AF7E225845A9}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangRewrite", "..\libs\build-clang\generated\tools\clang\lib\Rewrite\clangRewrite.vcxproj", "{968C443E-8DBF-4FDB-99F4-AF7E225845A9}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangRewriteFrontend", "..\External\build\llvm\tools\clang\lib\Frontend\Rewrite\clangRewriteFrontend.vcxproj", "{AB29BC3B-9B96-4EF6-9EE4-D09E1362D8CE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangRewriteFrontend", "..\libs\build-clang\generated\tools\clang\lib\Frontend\Rewrite\clangRewriteFrontend.vcxproj", "{AB29BC3B-9B96-4EF6-9EE4-D09E1362D8CE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangSema", "..\External\build\llvm\tools\clang\lib\Sema\clangSema.vcxproj", "{EF328218-FB5B-46C9-8A93-7D45834BB4E6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangSema", "..\libs\build-clang\generated\tools\clang\lib\Sema\clangSema.vcxproj", "{EF328218-FB5B-46C9-8A93-7D45834BB4E6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangSerialization", "..\External\build\llvm\tools\clang\lib\Serialization\clangSerialization.vcxproj", "{1DC520DF-7625-4D63-B271-F63E591E4490}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangSerialization", "..\libs\build-clang\generated\tools\clang\lib\Serialization\clangSerialization.vcxproj", "{1DC520DF-7625-4D63-B271-F63E591E4490}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangStaticAnalyzerCheckers", "..\External\build\llvm\tools\clang\lib\StaticAnalyzer\Checkers\clangStaticAnalyzerCheckers.vcxproj", "{A0145E3D-5AE0-47CA-B21D-2A43FA8E67F6}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangStaticAnalyzerCheckers", "..\libs\build-clang\generated\tools\clang\lib\StaticAnalyzer\Checkers\clangStaticAnalyzerCheckers.vcxproj", "{A0145E3D-5AE0-47CA-B21D-2A43FA8E67F6}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangStaticAnalyzerCore", "..\External\build\llvm\tools\clang\lib\StaticAnalyzer\Core\clangStaticAnalyzerCore.vcxproj", "{DCA4D286-CAF0-472D-A4F7-46A56EFE62CE}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangStaticAnalyzerCore", "..\libs\build-clang\generated\tools\clang\lib\StaticAnalyzer\Core\clangStaticAnalyzerCore.vcxproj", "{DCA4D286-CAF0-472D-A4F7-46A56EFE62CE}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangStaticAnalyzerFrontend", "..\External\build\llvm\tools\clang\lib\StaticAnalyzer\Frontend\clangStaticAnalyzerFrontend.vcxproj", "{19A43D3C-C419-45F2-A321-50D4D1577B90}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangStaticAnalyzerFrontend", "..\libs\build-clang\generated\tools\clang\lib\StaticAnalyzer\Frontend\clangStaticAnalyzerFrontend.vcxproj", "{19A43D3C-C419-45F2-A321-50D4D1577B90}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangToolingCore", "..\External\build\llvm\tools\clang\lib\Tooling\Core\clangToolingCore.vcxproj", "{9763B5D5-4FB1-4F5C-A138-28C03855E981}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "clangToolingCore", "..\libs\build-clang\generated\tools\clang\lib\Tooling\Core\clangToolingCore.vcxproj", "{9763B5D5-4FB1-4F5C-A138-28C03855E981}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libllvm", "..\External\build\libllvm\libllvm\libllvm.vcxproj", "{75BE8043-9420-4B5F-933C-1F4DCBA4EEF7}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libllvm", "..\libs\build-clang\libllvm.vcxproj", "{75BE8043-9420-4B5F-933C-1F4DCBA4EEF7}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LLVMOption", "..\External\build\llvm\lib\Option\LLVMOption.vcxproj", "{0C5826B9-E319-4B23-82B6-BC8A6C42C1E5}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LLVMOption", "..\libs\build-clang\generated\lib\Option\LLVMOption.vcxproj", "{0C5826B9-E319-4B23-82B6-BC8A6C42C1E5}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LLVMBitReader", "..\External\build\llvm\lib\Bitcode\Reader\LLVMBitReader.vcxproj", "{72261738-2699-4A93-A466-F0DC807116CD}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LLVMBitReader", "..\libs\build-clang\generated\lib\Bitcode\Reader\LLVMBitReader.vcxproj", "{72261738-2699-4A93-A466-F0DC807116CD}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LLVMMC", "..\External\build\llvm\lib\MC\LLVMMC.vcxproj", "{FB74706C-E63B-4A4A-B915-B8E6C1ACEAF8}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LLVMMC", "..\libs\build-clang\generated\lib\MC\LLVMMC.vcxproj", "{FB74706C-E63B-4A4A-B915-B8E6C1ACEAF8}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LLVMMCParser", "..\External\build\llvm\lib\MC\MCParser\LLVMMCParser.vcxproj", "{EEA821D6-D1D8-496D-82FD-D302D69DC72F}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LLVMMCParser", "..\libs\build-clang\generated\lib\MC\MCParser\LLVMMCParser.vcxproj", "{EEA821D6-D1D8-496D-82FD-D302D69DC72F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
