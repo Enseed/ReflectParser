@@ -69,10 +69,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\test\Sample\src\Sample.cpp" />
+    <ClCompile Include="..\..\src\Sample.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\test\Sample\src\Sample.h" />
+    <ClInclude Include="..\..\src\Sample.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

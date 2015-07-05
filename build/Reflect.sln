@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 14
+VisualStudioVersion = 14.0.22823.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Reflect", "Reflect.vcxproj", "{A101D68A-FD68-44CC-9214-B57085BFAD74}"
 EndProject
@@ -74,7 +74,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LLVMMC", "..\External\build
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LLVMMCParser", "..\External\build\llvm\lib\MC\MCParser\LLVMMCParser.vcxproj", "{EEA821D6-D1D8-496D-82FD-D302D69DC72F}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sample", "Sample\Sample.vcxproj", "{ECC65A49-A3E1-4D31-A73D-13F6FED9658D}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Sample", "..\test\Sample\build\win\Sample.vcxproj", "{ECC65A49-A3E1-4D31-A73D-13F6FED9658D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -746,6 +746,7 @@ Global
 		{ECC65A49-A3E1-4D31-A73D-13F6FED9658D}.MinSizeRel|Win32.ActiveCfg = Release|Win32
 		{ECC65A49-A3E1-4D31-A73D-13F6FED9658D}.MinSizeRel|Win32.Build.0 = Release|Win32
 		{ECC65A49-A3E1-4D31-A73D-13F6FED9658D}.MinSizeRel|x64.ActiveCfg = Release|Win32
+		{ECC65A49-A3E1-4D31-A73D-13F6FED9658D}.MinSizeRel|x64.Build.0 = Release|Win32
 		{ECC65A49-A3E1-4D31-A73D-13F6FED9658D}.Release|Mixed Platforms.ActiveCfg = Release|Win32
 		{ECC65A49-A3E1-4D31-A73D-13F6FED9658D}.Release|Mixed Platforms.Build.0 = Release|Win32
 		{ECC65A49-A3E1-4D31-A73D-13F6FED9658D}.Release|Win32.ActiveCfg = Release|Win32
@@ -756,6 +757,7 @@ Global
 		{ECC65A49-A3E1-4D31-A73D-13F6FED9658D}.RelWithDebInfo|Win32.ActiveCfg = Release|Win32
 		{ECC65A49-A3E1-4D31-A73D-13F6FED9658D}.RelWithDebInfo|Win32.Build.0 = Release|Win32
 		{ECC65A49-A3E1-4D31-A73D-13F6FED9658D}.RelWithDebInfo|x64.ActiveCfg = Release|Win32
+		{ECC65A49-A3E1-4D31-A73D-13F6FED9658D}.RelWithDebInfo|x64.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
