@@ -4,15 +4,6 @@
 [submodule "External/Enseed/Generic/Base"]
 	path = External/Enseed/Generic/Base
 	url = https://github.com/Enseed/GenericBase.git
-[submodule "External/Enseed/Generic/AutoPtr"]
-	path = External/Enseed/Generic/AutoPtr
-	url = https://github.com/gaspardpetit/GenericAutoPtr.git
-[submodule "External/Enseed/Generic/Devel"]
-	path = External/Enseed/Generic/Devel
-	url = https://github.com/gaspardpetit/GenericDevel.git
-[submodule "External/Enseed/Generic/CountPtr"]
-	path = External/Enseed/Generic/CountPtr
-	url = https://github.com/gaspardpetit/GenericCountPtr.git
 [submodule "External/llvm/tools/clang"]
 	path = External/llvm/tools/clang
 	url = https://github.com/llvm-mirror/clang.git
