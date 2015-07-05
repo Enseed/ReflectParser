@@ -37,12 +37,6 @@
     <ClInclude Include="..\src\Parser\Reflect.h">
       <Filter>Parser</Filter>
     </ClInclude>
-    <ClInclude Include="..\External\Enseed\Generic\AutoPtr\AutoPtr.h">
-      <Filter>External\Enseed\Generic</Filter>
-    </ClInclude>
-    <ClInclude Include="..\External\Enseed\Generic\AutoPtr\src\AutoPtr.inline.h">
-      <Filter>External\Enseed\Generic</Filter>
-    </ClInclude>
     <ClInclude Include="..\src\Parser\Header.h">
       <Filter>Parser</Filter>
     </ClInclude>
@@ -62,15 +56,6 @@
     </Filter>
     <Filter Include="Parser\Precompiled">
       <UniqueIdentifier>{0aa5b5f9-e922-41e0-9ba6-5c6bc6ad3fbd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="External">
-      <UniqueIdentifier>{04967477-5f3e-4d2c-9556-29246fe19068}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="External\Enseed">
-      <UniqueIdentifier>{36517ea4-0281-4f88-a179-9e3787d3d9bf}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="External\Enseed\Generic">
-      <UniqueIdentifier>{bbc1967a-fdf1-4350-8a24-4d75d22f90b3}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>

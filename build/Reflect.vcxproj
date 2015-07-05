@@ -137,8 +137,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\External\Enseed\Generic\AutoPtr\AutoPtr.h" />
-    <ClInclude Include="..\External\Enseed\Generic\AutoPtr\src\AutoPtr.inline.h" />
     <ClInclude Include="..\src\Parser\Header.h" />
     <ClInclude Include="..\src\Parser\Precompiled\Precompiled.h" />
     <ClInclude Include="..\src\Parser\Precompiled\targetver.h" />
