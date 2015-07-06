@@ -31,6 +31,7 @@
 #include <boost/multiprecision/cpp_int.hpp>
 #include <boost/filesystem/path.hpp>
 #include <boost/filesystem.hpp>
+#include <boost/algorithm/string.hpp>
 
 
 // TODO: reference additional headers your program requires here

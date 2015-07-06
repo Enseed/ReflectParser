@@ -10,6 +10,27 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\libs\build-clang\libclang.vcxproj">
+      <Project>{45b5c3c2-0583-4d1b-bab7-8b082389a5f7}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\libs\build-clang\libllvm.vcxproj">
+      <Project>{75be8043-9420-4b5f-933c-1f4dcba4eef7}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="..\Precompiled\Precompiled.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\Reflect\Reflect.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Precompiled\Precompiled.h" />
+    <ClInclude Include="..\Precompiled\targetver.h" />
+    <ClInclude Include="..\Reflect\Reflect.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{A101D68A-FD68-44CC-9214-B57085BFAD74}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
@@ -47,7 +68,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>..\src\;..\src\Precompiled\;..\External\;..\External\llvm\tools\clang\include;..\External\build\llvm\include;..\External\llvm\include;..\External\build\llvm\tools\clang\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Precompiled;..\libs\llvm\tools\clang\include;..\libs\build-clang\generated\include;..\libs\llvm\include;..\libs\build-clang\generated\tools\clang\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -63,7 +84,7 @@
       <IntrinsicFunctions>false</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeaderFile>Precompiled.h</PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>..\src\;..\src\Precompiled\;..\External\;..\External\llvm\tools\clang\include;..\External\build\llvm\include;..\External\llvm\include;..\External\build\llvm\tools\clang\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\Precompiled;..\libs\llvm\tools\clang\include;..\libs\build-clang\generated\include;..\libs\llvm\include;..\libs\build-clang\generated\tools\clang\include\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <WholeProgramOptimization>false</WholeProgramOptimization>
     </ClCompile>
     <Link>
@@ -73,37 +94,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClInclude Include="..\src\Parser\Header.h" />
-    <ClInclude Include="..\src\Parser\Precompiled\Precompiled.h" />
-    <ClInclude Include="..\src\Parser\Precompiled\targetver.h" />
-    <ClInclude Include="..\src\Parser\Reflect.h" />
-    <ClInclude Include="..\src\Reflect\Meta\Class.h" />
-    <ClInclude Include="..\src\Reflect\Meta\ClassDefinition.h" />
-    <ClInclude Include="..\src\Reflect\Meta\Kind.h" />
-    <ClInclude Include="..\src\Reflect\Meta\Member.h" />
-    <ClInclude Include="..\src\Reflect\Runtime\IClass.h" />
-    <ClInclude Include="..\src\Reflect\Runtime\IMember.h" />
-    <ClInclude Include="..\src\Reflect\Runtime\MemberCollection.h" />
-    <ClInclude Include="..\src\Reflect\Runtime\TClass.h" />
-    <ClInclude Include="..\src\Reflect\Runtime\TMember.h" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\src\Parser\main.cpp" />
-    <ClCompile Include="..\src\Parser\Precompiled\Precompiled.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-    </ClCompile>
-    <ClCompile Include="..\src\Parser\Reflect.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\External\build\libclang\libclang\libclang.vcxproj">
-      <Project>{45b5c3c2-0583-4d1b-bab7-8b082389a5f7}</Project>
-    </ProjectReference>
-    <ProjectReference Include="..\External\build\libllvm\libllvm\libllvm.vcxproj">
-      <Project>{75be8043-9420-4b5f-933c-1f4dcba4eef7}</Project>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

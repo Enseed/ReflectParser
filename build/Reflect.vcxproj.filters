@@ -1,72 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClInclude Include="..\src\Reflect\Meta\ClassDefinition.h">
-      <Filter>Reflect\Meta</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\Reflect\Meta\Kind.h">
-      <Filter>Reflect\Meta</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\Reflect\Meta\Member.h">
-      <Filter>Reflect\Meta</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\Reflect\Meta\Class.h">
-      <Filter>Reflect\Meta</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\Reflect\Runtime\IClass.h">
-      <Filter>Reflect\Runtime</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\Reflect\Runtime\IMember.h">
-      <Filter>Reflect\Runtime</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\Reflect\Runtime\MemberCollection.h">
-      <Filter>Reflect\Runtime</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\Reflect\Runtime\TClass.h">
-      <Filter>Reflect\Runtime</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\Reflect\Runtime\TMember.h">
-      <Filter>Reflect\Runtime</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\Parser\Precompiled\Precompiled.h">
-      <Filter>Parser\Precompiled</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\Parser\Precompiled\targetver.h">
-      <Filter>Parser\Precompiled</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\Parser\Reflect.h">
-      <Filter>Parser</Filter>
-    </ClInclude>
-    <ClInclude Include="..\src\Parser\Header.h">
-      <Filter>Parser</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Filter Include="Reflect">
-      <UniqueIdentifier>{be4b2816-6d27-44f9-b865-777053570945}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Reflect\Meta">
-      <UniqueIdentifier>{20f3b63b-4e2c-4e27-a226-3303df5e32fe}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Reflect\Runtime">
-      <UniqueIdentifier>{9b539298-bf1b-4750-b814-addbd50c2c84}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Parser">
       <UniqueIdentifier>{384b98d9-d425-45bc-be4c-d58142c1febe}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Parser\Precompiled">
-      <UniqueIdentifier>{0aa5b5f9-e922-41e0-9ba6-5c6bc6ad3fbd}</UniqueIdentifier>
-    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src\Parser\main.cpp">
-      <Filter>Parser</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\Parser\Precompiled\Precompiled.cpp">
-      <Filter>Parser\Precompiled</Filter>
-    </ClCompile>
-    <ClCompile Include="..\src\Parser\Reflect.cpp">
-      <Filter>Parser</Filter>
-    </ClCompile>
+    <ClCompile Include="..\main.cpp" />
+    <ClCompile Include="..\Precompiled\Precompiled.cpp" />
+    <ClCompile Include="..\Reflect\Reflect.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Precompiled\Precompiled.h" />
+    <ClInclude Include="..\Precompiled\targetver.h" />
+    <ClInclude Include="..\Reflect\Reflect.h" />
   </ItemGroup>
 </Project>

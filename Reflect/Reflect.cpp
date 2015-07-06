@@ -21,20 +21,18 @@
 #include <boost/multiprecision/cpp_int.hpp>
 #include <boost/filesystem/path.hpp>
 #include <boost/filesystem.hpp>
+#include <boost/algorithm/string.hpp>
 
 
 #include "Reflect.h"
-#include "Header.h"
 #include <fstream>
 #include <iostream>
 
-class ParseContext
+struct ParseContext
 {
-public:
-	ParsedHeader *_parsedHeader;
-	std::string _cppName;
+	Reflect::Header *parsedHeader;
+	std::string cppName;
 };
-
 
 std::string GetNamespace(clang::TagDecl *Declaration)
 {
@@ -57,36 +55,36 @@ std::string GetNamespace(clang::TagDecl *Declaration)
 	return ns;
 }
 
-ParsedHeader::Visibility GetVisibility(clang::AccessSpecifier visibility)
+Reflect::Visibility GetVisibility(clang::AccessSpecifier visibility)
 {
 	switch (visibility)
 	{
 	case clang::AS_public:
-		return ParsedHeader::ePUBLIC;
+		return Reflect::ePUBLIC;
 	case clang::AS_protected:
-		return ParsedHeader::ePROTECTED;
+		return Reflect::ePROTECTED;
 	case clang::AS_private:
-		return ParsedHeader::ePRIVATE;
+		return Reflect::ePRIVATE;
 	case clang::AS_none:
 	default:
-		return ParsedHeader::eNONE;
+		return Reflect::eNONE;
 	}
 }
 
 class EnumVisitor : public clang::RecursiveASTVisitor < EnumVisitor >
 {
 private:
-	ParsedHeader::Enum *_enum;
+	Reflect::Enum *_enum;
 
 public:
-	EnumVisitor(ParsedHeader::Enum *c)
+	EnumVisitor(Reflect::Enum *c)
 		: _enum(c)
 	{}
 
 	bool VisitEnumConstantDecl(clang::EnumConstantDecl *Declaration)
 	{
 		_enum->_constants.emplace_back();
-		ParsedHeader::EnumConstant &enumconst = _enum->_constants.back();
+		Reflect::EnumConstant &enumconst = _enum->_constants.back();
 		enumconst._name = Declaration->getNameAsString();
 		enumconst._value = Declaration->getInitVal().toString(10);
 		enumconst._bitWidth = Declaration->getInitVal().getBitWidth();
@@ -100,11 +98,11 @@ public:
 class TypeVisitor : public clang::RecursiveASTVisitor<TypeVisitor>
 {
 private:
-	ParsedHeader::Class *_class;
+	Reflect::Class *_class;
 	clang::ASTContext *_context;
 
 public:
-	TypeVisitor(clang::ASTContext *context, ParsedHeader::Class *c)
+	TypeVisitor(clang::ASTContext *context, Reflect::Class *c)
 		: _context(context)
 		, _class(c)
 	{}
@@ -114,7 +112,7 @@ public:
 		std::string sourceName = _context->getSourceManager().getFilename(Declaration->getLocStart()).str();
 
 		_class->_fields.emplace_back();
-		ParsedHeader::Field &field = _class->_fields.back();
+		Reflect::Field &field = _class->_fields.back();
 		field._name = Declaration->getNameAsString();
 		field._visibility = GetVisibility(Declaration->getAccess());
 		field._filename = sourceName;
@@ -157,7 +155,7 @@ public:
 	bool VisitDecl(clang::Decl *Declaration)
 	{
 		std::string sourceName = _context->getSourceManager().getFilename(Declaration->getLocStart()).str();
-		if (sourceName != _parsingContext->_cppName)
+		if (sourceName != _parsingContext->cppName)
 			return true; // ignore
 
 		std::cout << "<" << __FUNCTION__ <<  ">" << std::endl;
@@ -169,11 +167,11 @@ public:
 	bool VisitEnumDecl(clang::EnumDecl *Declaration)
 	{
 		std::string sourceName = _context->getSourceManager().getFilename(Declaration->getLocStart()).str();
-		if (sourceName != _parsingContext->_cppName)
+		if (sourceName != _parsingContext->cppName)
 			return true; // ignore
 
-		_parsingContext->_parsedHeader->_enums.emplace_back();
-		ParsedHeader::Enum &e = _parsingContext->_parsedHeader->_enums.back();
+		_parsingContext->parsedHeader->_enums.emplace_back();
+		Reflect::Enum &e = _parsingContext->parsedHeader->_enums.back();
 
 		Declaration->dump();
 
@@ -193,11 +191,11 @@ public:
 	bool VisitCXXRecordDecl(clang::CXXRecordDecl *Declaration)
 	{
 		std::string sourceName = _context->getSourceManager().getFilename(Declaration->getLocStart()).str();
-		if (sourceName != _parsingContext->_cppName)
+		if (sourceName != _parsingContext->cppName)
 			return true; // ignore
 
-		_parsingContext->_parsedHeader->_classes.emplace_back();
-		ParsedHeader::Class &c = _parsingContext->_parsedHeader->_classes.back();
+		_parsingContext->parsedHeader->_classes.emplace_back();
+		Reflect::Class &c = _parsingContext->parsedHeader->_classes.back();
 
 		c._filename = sourceName;
 		c._line = _context->getSourceManager().getSpellingLineNumber(Declaration->getLocStart());
@@ -212,7 +210,7 @@ public:
 		// parents
 		for (const auto &I : Declaration->bases()) {
 			c._parents.emplace_back();
-			ParsedHeader::Parent &parent = c._parents.back();
+			Reflect::Parent &parent = c._parents.back();
 			std::string abc = I.getType().getTypePtr()->getTypeClassName();
 			parent._virtual = I.isVirtual();
 			parent._visibility = GetVisibility(I.getAccessSpecifier());
@@ -271,7 +269,7 @@ public:
 };
 
 
-void Reflect::parseHeaderFile(const std::string &path, ParsedHeader *parsedHeader)
+void Reflect::parseHeaderFile(const std::string &path, Reflect::Header *parsedHeader)
 {
 	std::string cppName = boost::filesystem::path(path).filename().string() + ".cpp";
 	std::vector<std::string> args;
@@ -283,8 +281,8 @@ void Reflect::parseHeaderFile(const std::string &path, ParsedHeader *parsedHeade
 	std::string str((std::istreambuf_iterator<char>(ifs)), std::istreambuf_iterator<char>());
 
 	ParseContext writeContext;
-	writeContext._parsedHeader = parsedHeader;
-	writeContext._cppName = cppName;
+	writeContext.parsedHeader = parsedHeader;
+	writeContext.cppName = cppName;
 	clang::tooling::runToolOnCodeWithArgs(new ReflectClassAction(&writeContext), str, args, cppName);
 }
 
@@ -327,7 +325,7 @@ std::string GetSmalletEnumType(const boost::multiprecision::cpp_int &min, const 
 	return strstrm.str();
 }
 
-void Reflect::generateMetadataFile(const std::string &path, const ParsedHeader &parsedHeader)
+void Reflect::generateMetadataFile(const std::string &path, const Reflect::Header &parsedHeader)
 {
 	std::ofstream ofs(path);
 	std::string fileName = boost::filesystem::path(path).filename().string();
@@ -343,7 +341,7 @@ void Reflect::generateMetadataFile(const std::string &path, const ParsedHeader &
 	ofs << "#include <Enseed/Reflect/Class.h>" << std::endl;
 	ofs << std::endl;
 	ofs << "namespace reflect {" << std::endl;
-	for (const ParsedHeader::Enum &e : parsedHeader._enums)
+	for (const Reflect::Enum &e : parsedHeader._enums)
 	{
 		ofs << "template<> struct Enum<" << e._name << ">" << std::endl;
 		ofs << "{" << std::endl;
@@ -356,7 +354,7 @@ void Reflect::generateMetadataFile(const std::string &path, const ParsedHeader &
 			maxVal = boost::multiprecision::cpp_int(e._constants.front()._value);
 			minVal = boost::multiprecision::cpp_int(e._constants.front()._value);
 
-			for (const ParsedHeader::EnumConstant &k : e._constants)
+			for (const Reflect::EnumConstant &k : e._constants)
 			{
 				bitWidth = std::max(bitWidth, k._bitWidth);
 				isSigned = isSigned | k._isSigned;
@@ -379,7 +377,7 @@ void Reflect::generateMetadataFile(const std::string &path, const ParsedHeader &
 		ofs << "\t" << "struct Values" << std::endl;
 		ofs << "\t" << "{" << std::endl;
 
-		for (const ParsedHeader::EnumConstant &k : e._constants)
+		for (const Reflect::EnumConstant &k : e._constants)
 		{
 			ofs << "\t\t" << "struct " << k._name << std::endl;
 			ofs << "\t\t" << "{" << std::endl;
@@ -393,7 +391,7 @@ void Reflect::generateMetadataFile(const std::string &path, const ParsedHeader &
 		ofs << std::endl;
 		ofs << "\t" << "template<typename CB> static void visitValues()" << std::endl;
 		ofs << "\t" << "{" << std::endl;
-		for (const ParsedHeader::EnumConstant &k : e._constants)
+		for (const Reflect::EnumConstant &k : e._constants)
 		{
 			ofs << "\t\t" << "CB::operator()(Values::" << k._name << "()));" << std::endl;
 		}
@@ -402,7 +400,7 @@ void Reflect::generateMetadataFile(const std::string &path, const ParsedHeader &
 		ofs << std::endl;
 		ofs << "\t" << "template<typename CB> static void visitValues(CB &cb)" << std::endl;
 		ofs << "\t" << "{" << std::endl;
-		for (const ParsedHeader::EnumConstant &k : e._constants)
+		for (const Reflect::EnumConstant &k : e._constants)
 		{
 			ofs << "\t\t" << "cb(Values::" << k._name << "()));" << std::endl;
 		}
@@ -422,7 +420,7 @@ void Reflect::generateMetadataFile(const std::string &path, const ParsedHeader &
 
 	ofs << std::endl;
 
-	for (const ParsedHeader::Class &c : parsedHeader._classes)
+	for (const Reflect::Class &c : parsedHeader._classes)
 	{
 		ofs << std::endl;
 		ofs << "template<> struct Class<" << c._name << ", 0> : public ClassBase<" << c._name << ">" << std::endl;
@@ -435,7 +433,7 @@ void Reflect::generateMetadataFile(const std::string &path, const ParsedHeader &
 		ofs << "\t" << "struct Fields" << std::endl;
 		ofs << "\t" << "{" << std::endl;
 
-		for (const ParsedHeader::Field &f : c._fields)
+		for (const Reflect::Field &f : c._fields)
 		{
 			ofs << "\t\t" << "struct " << f._name << std::endl;
 			ofs << "\t\t" << "{" << std::endl;
@@ -445,7 +443,7 @@ void Reflect::generateMetadataFile(const std::string &path, const ParsedHeader &
 			ofs << "\t\t\t" << "typedef " << c._name << " host_type;" << std::endl;
 			ofs << "\t\t\t" << "typedef const " << c._name << " const_host_type;" << std::endl;
 			ofs << "\t\t\t" << "static const char* name() { return \"" << f._name << "\"; }" << std::endl;
-			ofs << "\t\t\t" << "static constexpr reflect::Visibility::Value visibility = " << ParsedHeader::VisibilityString(f._visibility, c._kind) << ";" << std::endl;
+			ofs << "\t\t\t" << "static constexpr reflect::Visibility::Value visibility = " << Reflect::VisibilityString(f._visibility, c._kind) << ";" << std::endl;
 			ofs << "\t\t\t" << "static const " << f._type._name << "& readRef(const " << c._name << " &target) { return target." << f._name << "; }" << std::endl;
 			ofs << "\t\t\t" << "static " << f._type._name << "* writePtr(" << c._name << " *target) { return &target->" << f._name << "; }" << std::endl;
 			ofs << "\t\t" << "};" << std::endl;
@@ -456,7 +454,7 @@ void Reflect::generateMetadataFile(const std::string &path, const ParsedHeader &
 		ofs << std::endl;
 		ofs << "\t" << "template<typename CB> static void visitParents(CB &cb = CB())" << std::endl;
 		ofs << "\t" << "{" << std::endl;
-		for (const ParsedHeader::Parent &p : c._parents)
+		for (const Reflect::Parent &p : c._parents)
 		{
 			ofs << "\t\t" << "cb(Class<" << p._name << ">());" << std::endl;
 		}
@@ -465,7 +463,7 @@ void Reflect::generateMetadataFile(const std::string &path, const ParsedHeader &
 		ofs << std::endl;
 		ofs << "\t" << "template<typename CB> static void visitFields(CB &cb = CB())" << std::endl;
 		ofs << "\t" << "{" << std::endl;
-		for (const ParsedHeader::Field &f : c._fields)
+		for (const Reflect::Field &f : c._fields)
 		{
 			ofs << "\t\t" << "cb(Fields::" << f._name << "());" << std::endl;
 		}
@@ -477,7 +475,7 @@ void Reflect::generateMetadataFile(const std::string &path, const ParsedHeader &
 		ofs << std::endl;
 
 		int i = 0;
-		for (const ParsedHeader::Field &field : c._fields)
+		for (const Reflect::Field &field : c._fields)
 		{
 			ofs << "template<> struct Field<" << c._name << ", " << i++ << "> : public Class<" << c._name << ">::Fields::" << field._name << "{};" << std::endl;
 		}
@@ -485,7 +483,7 @@ void Reflect::generateMetadataFile(const std::string &path, const ParsedHeader &
 		ofs << std::endl;
 
 		std::set<std::string> sortedNames;
-		for (const ParsedHeader::Field &field : c._fields)
+		for (const Reflect::Field &field : c._fields)
 		{
 			sortedNames.insert(field._name);
 		}
@@ -504,8 +502,4 @@ void Reflect::generateMetadataFile(const std::string &path, const ParsedHeader &
 	ofs << std::endl;
 
 	ofs << "#endif // " << guardName << std::endl;
-
-
-
-
 }

@@ -8,8 +8,7 @@
 #include <boost/filesystem/path.hpp>
 #include <boost/filesystem.hpp>
 
-#include "Reflect.h"
-#include "Header.h"
+#include "Reflect/Reflect.h"
 
 int main(int argc, char** argv)
 {
@@ -42,7 +41,7 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpCmdLine
 				std::ofstream out(dstPath);
 				std::cout << "Generating " << dstPath << " from " << srcPath << std::endl;
 
-				ParsedHeader parsedHeader;
+				Reflect::Header parsedHeader;
 				Reflect::parseHeaderFile(srcPath, &parsedHeader);
 				Reflect::generateMetadataFile(dstPath, parsedHeader);
 			}
