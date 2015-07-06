@@ -16,6 +16,10 @@
 #include "clang/Tooling/Tooling.h"
 #include "clang/Basic/SourceManager.h"
 
+#include "clang/Tooling/CommonOptionsParser.h"
+#include "llvm/Support/CommandLine.h"
+#include "clang/Tooling/Tooling.h"
+
 #pragma warning(pop)
 
 #include <boost/multiprecision/cpp_int.hpp>
@@ -30,8 +34,8 @@
 
 struct ParseContext
 {
-	Reflect::Header *parsedHeader;
-	std::string cppName;
+	Reflect::Header header;
+	std::string unitName;
 };
 
 std::string GetNamespace(clang::TagDecl *Declaration)
@@ -155,7 +159,7 @@ public:
 	bool VisitDecl(clang::Decl *Declaration)
 	{
 		std::string sourceName = _context->getSourceManager().getFilename(Declaration->getLocStart()).str();
-		if (sourceName != _parsingContext->cppName)
+		if (sourceName != _parsingContext->unitName)
 			return true; // ignore
 
 		std::cout << "<" << __FUNCTION__ <<  ">" << std::endl;
@@ -167,11 +171,11 @@ public:
 	bool VisitEnumDecl(clang::EnumDecl *Declaration)
 	{
 		std::string sourceName = _context->getSourceManager().getFilename(Declaration->getLocStart()).str();
-		if (sourceName != _parsingContext->cppName)
+		if (sourceName != _parsingContext->unitName)
 			return true; // ignore
 
-		_parsingContext->parsedHeader->_enums.emplace_back();
-		Reflect::Enum &e = _parsingContext->parsedHeader->_enums.back();
+		_parsingContext->header._enums.emplace_back();
+		Reflect::Enum &e = _parsingContext->header._enums.back();
 
 		Declaration->dump();
 
@@ -191,11 +195,11 @@ public:
 	bool VisitCXXRecordDecl(clang::CXXRecordDecl *Declaration)
 	{
 		std::string sourceName = _context->getSourceManager().getFilename(Declaration->getLocStart()).str();
-		if (sourceName != _parsingContext->cppName)
+		if (sourceName != _parsingContext->unitName)
 			return true; // ignore
 
-		_parsingContext->parsedHeader->_classes.emplace_back();
-		Reflect::Class &c = _parsingContext->parsedHeader->_classes.back();
+		_parsingContext->header._classes.emplace_back();
+		Reflect::Class &c = _parsingContext->header._classes.back();
 
 		c._filename = sourceName;
 		c._line = _context->getSourceManager().getSpellingLineNumber(Declaration->getLocStart());
@@ -269,21 +273,69 @@ public:
 };
 
 
-void Reflect::parseHeaderFile(const std::string &path, Reflect::Header *parsedHeader)
+void Reflect::parse(int argc, const char *argv[], Reflect::OnHeaderParsedCb onHeaderParsedCb)
 {
-	std::string cppName = boost::filesystem::path(path).filename().string() + ".cpp";
 	std::vector<std::string> args;
-	args.push_back("-IC:\\Work\\Public\\Reflect\\External");
-	args.push_back("-IC:\\Work\\Enseed_svn\\trunk\\ThirdParty\\boost");
-	args.push_back("-IC:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.10056.0\\ucrt");
-	args.push_back("-fms-compatibility-version=19.00.22609");
-	std::ifstream ifs(path);
+	std::vector<std::string> fileArgs;
+
+	for (int i = 1; i < argc; ++i)
+	{
+
+		if (boost::starts_with(argv[i], "-"))
+			args.push_back(argv[i]);
+		else
+			fileArgs.push_back(argv[i]);
+	}
+
+//	args.push_back("-IC:\\Work\\Public\\Reflect\\External");
+//	args.push_back("-IC:\\Work\\Enseed_svn\\trunk\\ThirdParty\\boost");
+//	args.push_back("-IC:\\Program Files (x86)\\Windows Kits\\10\\Include\\10.0.10056.0\\ucrt");
+//	args.push_back("-fms-compatibility-version=19.00.22609");
+
+	for (const std::string &file : fileArgs)
+	{
+		boost::filesystem::path path(file);
+		path = path.normalize();
+		if (boost::filesystem::is_directory(path))
+		{
+			std::cout << "Looking for header files in directory " << path << std::endl;
+			boost::filesystem::directory_iterator iter(path);
+			for (boost::filesystem::path const& file : iter)
+			{
+				std::string extension = file.extension().string();
+				if (isValidSourceFile(file))
+				{
+					parseFile(args, file, onHeaderParsedCb);
+				}
+			}
+		}
+		else
+		{
+			if (isValidSourceFile(file))
+			{
+				parseFile(args, path, onHeaderParsedCb);
+			}
+			else
+			{
+				std::cout << "Invalid file: " << file << std::endl;
+			}
+		}
+
+	}
+}
+
+void Reflect::parseFile(const std::vector<std::string>& args, const boost::filesystem::path & path, Reflect::OnHeaderParsedCb onHeaderParsedCb)
+{
+	std::cout << "Processing " << path << std::endl;
+
+	std::string cppName = path.filename().string() + ".cpp";
+	std::ifstream ifs(path.string());
 	std::string str((std::istreambuf_iterator<char>(ifs)), std::istreambuf_iterator<char>());
 
 	ParseContext writeContext;
-	writeContext.parsedHeader = parsedHeader;
-	writeContext.cppName = cppName;
+	writeContext.unitName = cppName;
 	clang::tooling::runToolOnCodeWithArgs(new ReflectClassAction(&writeContext), str, args, cppName);
+	onHeaderParsedCb(writeContext.header, path);
 }
 
 std::string GetEnumValueType(unsigned int bitWidth, bool isSigned)
@@ -325,7 +377,7 @@ std::string GetSmalletEnumType(const boost::multiprecision::cpp_int &min, const 
 	return strstrm.str();
 }
 
-void Reflect::generateMetadataFile(const std::string &path, const Reflect::Header &parsedHeader)
+void Reflect::generateMetadataFile(const std::string &path, const Reflect::Header &header)
 {
 	std::ofstream ofs(path);
 	std::string fileName = boost::filesystem::path(path).filename().string();
@@ -341,7 +393,7 @@ void Reflect::generateMetadataFile(const std::string &path, const Reflect::Heade
 	ofs << "#include <Enseed/Reflect/Class.h>" << std::endl;
 	ofs << std::endl;
 	ofs << "namespace reflect {" << std::endl;
-	for (const Reflect::Enum &e : parsedHeader._enums)
+	for (const Reflect::Enum &e : header._enums)
 	{
 		ofs << "template<> struct Enum<" << e._name << ">" << std::endl;
 		ofs << "{" << std::endl;
@@ -420,7 +472,7 @@ void Reflect::generateMetadataFile(const std::string &path, const Reflect::Heade
 
 	ofs << std::endl;
 
-	for (const Reflect::Class &c : parsedHeader._classes)
+	for (const Reflect::Class &c : header._classes)
 	{
 		ofs << std::endl;
 		ofs << "template<> struct Class<" << c._name << ", 0> : public ClassBase<" << c._name << ">" << std::endl;
@@ -502,4 +554,14 @@ void Reflect::generateMetadataFile(const std::string &path, const Reflect::Heade
 	ofs << std::endl;
 
 	ofs << "#endif // " << guardName << std::endl;
+}
+
+bool Reflect::isValidSourceFile(const boost::filesystem::path & path)
+{
+	if (!is_regular_file(path))
+		return false;
+	
+	std::string ext = path.extension().string();
+
+	return  (ext == ".h" || ext == ".hpp" || ext == ".hh");
 }

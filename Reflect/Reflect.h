@@ -100,6 +100,9 @@ public:
 	};
 	
 public:
-	static void parseHeaderFile(const std::string &path, Reflect::Header *outParsedHeader);
+	typedef void(*OnHeaderParsedCb)(const Reflect::Header &header, const boost::filesystem::path &source);
+	static void parse(int argc, const char *argv[], OnHeaderParsedCb onHeaderParsedCb);
+	static void parseFile(const std::vector<std::string> &args, const boost::filesystem::path &file, OnHeaderParsedCb onHeaderParsedCb);
 	static void generateMetadataFile(const std::string &path, const Reflect::Header &outParsedHeader);
+	static bool isValidSourceFile(const boost::filesystem::path &path);
 };
