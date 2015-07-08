@@ -26,7 +26,7 @@
 #include <boost/filesystem/path.hpp>
 #include <boost/filesystem.hpp>
 #include <boost/algorithm/string.hpp>
-
+#include <boost/date_time/posix_time/posix_time.hpp>
 
 #include "Reflect.h"
 #include <fstream>
@@ -389,8 +389,9 @@ void Reflect::generateMetadataFile(const std::string &path, const Reflect::Heade
 
 	ofs << "#ifndef " << guardName << std::endl;
 	ofs << "#define " << guardName << std::endl;
+	ofs << "/* This file was generated on " << boost::posix_time::second_clock::local_time() << " by Reflect */" << std::endl;
 	ofs << std::endl;
-	ofs << "#include <Enseed/Reflect/Class.h>" << std::endl;
+	ofs << "#include <Enseed/Reflect/API/Class.h>" << std::endl;
 	ofs << std::endl;
 	ofs << "namespace reflect {" << std::endl;
 	for (const Reflect::Enum &e : header._enums)
