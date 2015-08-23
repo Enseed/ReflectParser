@@ -389,9 +389,9 @@ void Reflect::generateMetadataFile(const std::string &path, const Reflect::Heade
 
 	ofs << "#ifndef " << guardName << std::endl;
 	ofs << "#define " << guardName << std::endl;
-	ofs << "/* This file was generated on " << boost::posix_time::second_clock::local_time() << " by Reflect */" << std::endl;
+	ofs << "/* This file was generated on " << boost::posix_time::second_clock::local_time() << " by Enseed Reflect */" << std::endl;
 	ofs << std::endl;
-	ofs << "#include <Enseed/Reflect/API/Class.h>" << std::endl;
+	ofs << "#include <Reflect/Class.h>" << std::endl;
 	ofs << std::endl;
 	ofs << "namespace reflect {" << std::endl;
 	for (const Reflect::Enum &e : header._enums)
@@ -481,6 +481,7 @@ void Reflect::generateMetadataFile(const std::string &path, const Reflect::Heade
 		ofs << "\t" << "typedef " << c._name << " type;" << std::endl;
 		ofs << "\t" << "static constexpr int parent_count = " << c._parents.size() << ";" << std::endl;
 		ofs << "\t" << "static constexpr int field_count = " << c._fields.size() << " ;" << std::endl;
+		ofs << "\t" << "static constexpr const char* name() { return \"" << c._name << "\"; }" << std::endl;
 		ofs << std::endl;
 
 		ofs << "\t" << "struct Fields" << std::endl;

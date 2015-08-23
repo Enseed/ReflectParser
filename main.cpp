@@ -14,8 +14,12 @@
 int main(int argc, const char** argv)
 {
 	Reflect::parse(argc, argv, [](const Reflect::Header &header, const boost::filesystem::path &srcPath) {
-		std::string fileName = srcPath.filename().string();
-		std::string dstPath = srcPath.parent_path().append(fileName + ".reflect.h").string();
+		const boost::filesystem::path srcFileName = srcPath.filename();
+		boost::filesystem::path dstFileName = srcFileName;
+		dstFileName.replace_extension("rh");
+
+
+		std::string dstPath = srcPath.parent_path().append(dstFileName.string()).string();
 		std::cout << "Saving " << dstPath << std::endl;
 		Reflect::generateMetadataFile(dstPath, header);
 	});
