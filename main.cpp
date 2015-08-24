@@ -16,7 +16,7 @@ int main(int argc, const char** argv)
 	Reflect::parse(argc, argv, [](const Reflect::Header &header, const boost::filesystem::path &srcPath) {
 		const boost::filesystem::path srcFileName = srcPath.filename();
 		boost::filesystem::path dstFileName = srcFileName;
-		dstFileName.replace_extension("rh");
+		dstFileName.replace_extension("reflect.h");
 
 
 		std::string dstPath = srcPath.parent_path().append(dstFileName.string()).string();
