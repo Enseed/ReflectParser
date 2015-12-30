@@ -38,8 +38,8 @@ public:
 Generates the following companion class:
 
 ```c++
-#ifndef __RECLECT_CLASS_SAMPLE_H__
-#define __RECLECT_CLASS_SAMPLE_H__
+#ifndef __REFLECT_CLASS_SAMPLE_H__
+#define __REFLECT_CLASS_SAMPLE_H__
 
 #include <Enseed/Reflect/Class.h>
 
@@ -98,7 +98,7 @@ template<> struct SortedField<Sample, 1> : public Class<Sample>::Fields::_value{
 
 } // namespace reflect
 
-#endif // __RECLECT_CLASS_SAMPLE_H__
+#endif // __REFLECT_CLASS_SAMPLE_H__
 ```
 
 This companion class can then be used at compile time to visit members:
